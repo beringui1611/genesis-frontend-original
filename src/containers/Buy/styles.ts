@@ -27,7 +27,8 @@ overflow-x:hidden;
         color: #ffff;
         font-size: 20px;
         width: 800px;
-        margin-bottom: 20px;
+        margin-top: 5px;
+        margin-bottom: 15px;
     }
 
     a{
@@ -90,7 +91,7 @@ img{
 .input-buy{
     margin-left: 30px;
     margin-top: 20px;
-    width: 200px;
+    width: 300px;
     height: 70px;
     padding-top: 20px;
     color: #ffffff;
@@ -168,9 +169,9 @@ h2{
     display: flex;
     flex-direction: column;
     z-index: 3;
-    margin-top:-680px;
-    margin-left: 1200px;
-    gap: 170px;
+    margin-top:-700px;
+    margin-left: 1150px;
+    gap: 180px;
     
 
     div{
@@ -189,6 +190,10 @@ h2{
             margin-top: 2px;
             font-size: 16px;
             font-weight: 600;
+        }
+
+        img{
+       
         }
     }
 
@@ -221,12 +226,15 @@ h2{
     border-radius: 30px;
     padding-left: 8px;
     padding-right: 8px;
-    margin-top: -145px;
+    margin-top: -140px;
     margin-bottom: -20px;
     z-index: 2;
     position: absolute;
     border: none;
     cursor: pointer;
 }
+
+
+
 
 `

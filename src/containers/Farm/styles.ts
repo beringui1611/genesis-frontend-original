@@ -10,8 +10,49 @@ export const Container = styled.div`
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
-}
+  }
  
+
+  .wallet-value{
+    display: flex;
+    align-items: center; 
+    gap: 6px; 
+    color: #ffff; 
+    font-weight: 700; 
+    margin-top: 15px;
+    margin-left: 20px;
+    padding-right: 35px;
+  }
+
+  .wallet-value-two{
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+    color: #ffff; 
+    font-weight: 700; 
+    margin-top: 20px;
+  }
+
+  .wallet-value-three{
+    display: flex;
+    align-items: center; 
+    gap: 6px; 
+    color: #ffff; 
+    font-weight: 700; 
+    margin-top: 15px;
+    margin-left: 25px;
+  }
+
+  .wallet-value-four{
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+    color: #ffff; 
+    font-weight: 700; 
+    margin-top: 25px; 
+    margin-left: 25px;
+  }
+
   #container-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -157,7 +198,7 @@ export const Container = styled.div`
   #box-farm-one{
     width: 500px;
     height: 140px;
-    border: 1px solid #FF3395;
+    border: 2px solid #FF3395;
     border-radius: 10px;
     margin-left: 53px;
     margin-top: 10px;
@@ -168,7 +209,7 @@ export const Container = styled.div`
   #box-farm-two{
     width: 500px;
     height: 140px;
-    border: 1px solid #FF3395;
+    border: 2px solid #FF3395;
     border-radius: 10px;
     margin-left: 53px;
     display: flex;
@@ -187,7 +228,9 @@ export const Container = styled.div`
     border: none;
     margin-top: 20px;
     cursor: pointer;
-
+    &:hover{
+      opacity: 0.8;
+    }
   }
 
   #arrow{
@@ -201,7 +244,7 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 50px;
     margin-left: 20px;
-
+    width: 200px;
   }
   #input-value{
     font-size:30px;
@@ -239,7 +282,9 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    
+    margin-left: 150px;
+    padding: auto;
+    width: 250px;
   }
 
   #usdt-container{
@@ -252,9 +297,11 @@ export const Container = styled.div`
 
   #usdt-container-two{
     display: flex;
-    flex-direction:column;
+    position: absolute;
+    flex-direction: column;
     align-items: center;
     gap: 40px;
+    margin-left: 370px;
   }
 
   #usdt-value{
@@ -262,4 +309,83 @@ export const Container = styled.div`
     font-weight:700;
     color:#ffff;
   }
+
+  #container-primary{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  #your-balance{
+    color:#fff;
+    font-weight:700;
+    font-size:18px;
+  }
+
+  .container-balance-plg{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 20px;
+    align-items: center;
+   
+
+  }
+
+ .container-primary-balance{
+  display: flex;
+  align-items: center;
+  gap: 300px;
+ }
+
+ #paragraph-farm{
+  font-size:14px;
+  color: #707070;
+ }
+
+ #h1-plg{
+  color:#ffff;
+  font-size:18px;
+  font-weight:700;
+  display: flex;
+  gap:8px;
+  margin-top:10px;
+  margin-left: -7px;
+  margin-right: 7px;
+ }
+
+ #value-plg-balance{
+  color:#ffff;
+  font-weight:700;
+  font-size: 20px;
+ }
+
+ #paragraph-usdt{
+  font-size:14px;
+  color: #707070;
+ }
+
+ #usdt-amount{
+  color:#ffff;
+  font-size:18px;
+  font-weight:700;
+  display: flex;
+  gap:8px;
+  margin-top:10px;
+ }
+
+ #dolar-amount{
+    color:#ffff;
+  font-weight:700;
+  font-size: 20px;
+ }
+
+
+ .amount{
+  margin-top: 50px;
+ }
+
+  
 `;

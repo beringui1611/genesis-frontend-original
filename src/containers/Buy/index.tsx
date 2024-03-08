@@ -1,38 +1,53 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom"
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ArrowBuy from "../../assets/Buy-assets/arrow-buy.svg";
 import ArrowRight from "../../assets/Buy-assets/Arrow 2.svg";
-import ArrowBuyTwo from "../../assets/Buy-assets/arrow-buy.svg"
 import Usdt from "../../assets/Buy-assets/usdt-image.svg";
 import Blocks from "../../assets/Buy-assets/blocks.svg";
 import { Container } from "./styles";
+import { buy } from "../../service/Web3Service";
+import { toast } from "react-toastify";
+import Modal from "../../components/Modal";
 
 function Buy() {
-  const [usdt, setUsdt] = useState<number>(0);
-  const [blocks, setBlocks] = useState<number>(0);
-  const [arrow, setArrowChange] = useState(false);
-  const [rotation, setRotation] = useState<number>(0);
 
-  function handleChangeValueUsdt(event: any) {
-    const valueMonthUpdate = event.target.value;
-    const newValue = valueMonthUpdate * 10;
-    setUsdt(newValue);
+  const [value, setValue] = useState<number>(0);
+  const [modal, setModal] = useState<boolean>(false);
+
+  function swap (event: React.ChangeEvent<HTMLInputElement>){
+    setValue(parseFloat(event.target.value));
   }
 
-  function handleChangeValueBlocks(event: any) {
-    const valueMonthUpdateTwo = event.target.value;
-    const newValueTwo = valueMonthUpdateTwo * 0.10;
-    setBlocks(newValueTwo);
+  function openAndCloseModal(){
+     setModal(!modal)
   }
 
-  function invertValue(event:any) {
-    const temp = usdt;
-    setUsdt(blocks);
-    setBlocks(temp);
-    setArrowChange(!arrow);
-    setRotation(rotation + 180)
-  }
+  async function order() {
+    try {
+       
+        await toast.promise(
+            buy(value * 10 ** 6),
+            {
+                pending: "Verificando...",
+                success: "Pagamento realizado com sucesso. Verifique sua carteira!",
+                error: "Você não tem saldo suficiente. Tente novamente ou volte mais tarde."
+            }
+        );
+    } catch (error) {
+        return error;
+    }
+}
+
+
+
+  
+
+
+
+
+
 
   return (
     <Container>
@@ -40,36 +55,49 @@ function Buy() {
       <div className="buy-title">
         <h1>Buy GÊNESIS</h1>
         <p>
-          are neque, in sollicitudin tellus ultricies sed. Nulla ultrices neque
-          vel metus dapibus, non ultricies urna condimentum. Sed blandit eu
-          elit a lacinia.
+          This is where you convert your USDT to Plural Genesis. Once the conversion is done, just start farming!
         </p>
-        <a href="">Get Farming <img src={ArrowRight} alt="arror-right" /></a>
+        <Link to="/farm">Get Farming <img src={ArrowRight} alt="arror-right" /></Link>
       </div>
       <div className="buy-containers">
         <div className="itens-buy-container">
           <h2>To Convert</h2>
-          <input onChange={arrow ? handleChangeValueBlocks : handleChangeValueUsdt} className="input-buy" placeholder="0.0" min="0" type="number"/>
+          <input onChange={swap} className="input-buy" placeholder="0" min="0" type="number" />
         </div>
-        <button onClick={invertValue} id="change-value">
-          <img src={arrow ? ArrowBuy : ArrowBuyTwo} alt="" /> 
+        <button id="change-value">
+          <img src={ArrowBuy} alt="teste" />
         </button>
         <div className="itens-buy-container">
           <h2>For</h2>
-          <p id="value-usdt-amount">{blocks}</p>
+          <p id="value-usdt-amount">{value ? (value * 10).toFixed(2) : "$0.00"}</p>
         </div>
-        <button id="btn-wallet">CONNECT WALLET</button>
+        {
+          !localStorage.getItem('wallet') ?
+          ( 
+          <button onClick={openAndCloseModal} id="btn-wallet">Connect Wallet</button>
+          )
+          :
+          <button onClick={order} id="btn-wallet">Payment</button>
+
+        }
+               
       </div>
+
+      {
+          modal && <Modal/>
+        }
       <div className="div-coins">
         <div>
-          <img src={arrow ? Blocks : Usdt} alt={arrow ? "PLG-logo" : "USDT-logo"} /> 
-          <h3>{arrow ? "PLG" : "USDT"}</h3> 
+          <img src={ Usdt} alt="arrow" />
+          <h3>USDT</h3>
         </div>
         <div>
-          <img src={arrow ? Usdt : Blocks} alt={arrow ? "USDT-logo" : "PLG-logo"} /> 
-          <h3>{arrow ? "USDT" : "PLG"}</h3>
+          <img src={Blocks} alt={"test"} />
+          <h3>PLG</h3>
         </div>
+       
       </div>
+    
       <Footer />
     </Container>
   );

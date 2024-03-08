@@ -18,7 +18,7 @@ const StyledToastContainer = styled(ToastContainer)`
   width: 320px; /* Defina a largura desejada */
   position: fixed; /* Mantenha o ToastContainer fixo na tela */
   z-index: 9999; /* Garanta que o ToastContainer esteja acima de outros elementos */
-
+  
 }
 
 /* Defina o estilo padrão do toast */

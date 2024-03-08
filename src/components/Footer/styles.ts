@@ -41,4 +41,12 @@ margin-top: 70px;
         }
     }
 }
+
+
+#paragraph-developed{
+    color: #ffff;
+    position:absolute;
+   margin-left: 45%;
+   margin-top:5%;
+}
 `

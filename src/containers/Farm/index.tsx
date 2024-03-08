@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import { addYieldFarming } from "../../service/Web3Service";
+import { addYieldFarming, getBalance, getFarming, getRewards, getUsdt, removeYield} from "../../service/Web3Service";
 import { useEffect, useState } from "react";
 import ArrowIcon from '../../assets/Farm-assets/Arrow.png';
 import ArrowIconPink from '../../assets/Farm-assets/arrow-pink.png';
@@ -8,69 +8,122 @@ import Block from '../../assets/Farm-assets/block.png';
 import Wallet from '../../assets/Farm-assets/wallet.png';
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
-import { getBalance } from "../../service/Web3Service";
 import UsdtIcon from '../../assets/Farm-assets/usdt.png'
+import Modal from "../../components/Modal";
+import { toast } from "react-toastify";
+import Charts from "../../components/Charts";
+
 export default function Farm() {
-  const [farming, setFarming] = useState<any>();
-  const [message, setMessage] = useState<string>("");
   const [isActive, setIsActive] = useState<number>(1);
   const [valueMonth, setValueMonth] = useState<number>(0);
-  const [walletUser, setWalletUser] = useState<string>("");
   const [balance, setBalance] = useState<any>(0)
+  const [modal, setModal] = useState(false);
+  const [inputValue, setInputValue] = useState('');
+  const [usdt, setUsdt] = useState<any>(0);
+  const [farming, setFarming] = useState<any>(0);
 
 
   async function handleClickYieldFarming() {
     try {
-      if (farming === undefined || isNaN(farming)) {
-        setMessage("Please enter a valid farming value.");
-        return;
-      }
-
-      const newValue = farming * 10 ** 6;
-      console.log(newValue)
-      await addYieldFarming(newValue);
-      setMessage("Yield farming added successfully!");
+      await toast.promise(
+        addYieldFarming(valueMonth * 10 ** 7),
+        {
+          pending: "sending value...",
+          success: "send value with sucessfull",
+          error: "error, try again!"
+        }
+      )
     } catch (err) {
-      setMessage("Error adding yield farming: " + err);
+
+    }
+  }
+
+  async function handleClickRemoveYield(){
+    try{
+      await toast.promise(
+       removeYield(valueMonth * 10 ** 7).then()
+       .catch(e =>{
+          throw new Error(e)
+        }),
+        {
+          pending: "sending value...",
+          success: "withdraw make a successfull",
+          error: "you dont have balance or time block"
+        }
+      )
+    }catch(err){
+      return err
     }
   }
 
 
-  function handleClickValueFarming(event: any): any {
-    setFarming(event.target.value)
+  async function handleClickGetRewards(){
+    try {
+       await toast.promise(
+         getRewards()
+        .then()
+        .catch(e => {
+          throw new Error(e)
+        }),
+        {
+          pending: "checking...",
+          success: "reward send your account!",
+          error: "time blocked or you dont have founds"
+        }
+       )
+    }catch(err){
+      return err
+    }
+  }
+
+  function handleClickOpenModal() {
+    setModal(!modal);
+
   }
 
   function handleClickActive(event: number): void {
     setIsActive(event)
   }
 
+
   function handleChangeValueFarming(event: any) {
     const valueMonthUpdate = event.target.value
     const newValue = valueMonthUpdate * 0.10
     setValueMonth(newValue)
+    const { value } = event.target;
+    if (value.length <= 9) {
+      setInputValue(value);
+    }
   }
 
+
   useEffect(() => {
-    async function defaultView() {
+    async function fetchData() {
       try {
         const walletUser = localStorage.getItem('wallet');
         if (walletUser !== null) {
           const parsedWalletUser = JSON.parse(walletUser);
-          setWalletUser(parsedWalletUser);
-          const balance: any = await getBalance(parsedWalletUser);
-          const newBalance: any = parseInt(balance);
-          const math = newBalance / Math.pow(10, 6);
-          setBalance(math)
+          const balanceResponse: any = await getBalance(parsedWalletUser);
+          const balance = parseInt(balanceResponse) / Math.pow(10, 6);
+  
+          const balanceUsdtResponse: any = await getUsdt(parsedWalletUser);
+          const balanceUsdt = parseInt(balanceUsdtResponse) / Math.pow(10, 6);
+  
+          const availableResponse: any = await getFarming(parsedWalletUser);
+          const available = parseInt(availableResponse) / Math.pow(10, 6);
+  
+          setBalance(balance);
+          setUsdt(balanceUsdt);
+          setFarming(available);
         }
-
       } catch (error) {
-        console.error("Error fetching balance:", error);
+        console.error("Error fetching data:", error);
       }
     }
-
-    defaultView();
+  
+    fetchData();
   }, []);
-
+  
 
 
   return (
@@ -90,7 +143,7 @@ export default function Farm() {
         marginLeft: "100px",
         width: "800px",
         marginBottom: "20px"
-      }}>are neque, in sollicitudin tellus ultricies sed. Nulla ultrices neque vel metus dapibus, non ultricies urna condimentum. Sed blandit eu elit a lacinia. </p>
+      }}>This is where you put your PLG to render. Remembering that after placing your PLG to farm, you will only be able to withdraw your income in 30 days. </p>
 
 
       <Link style={{
@@ -109,7 +162,7 @@ export default function Farm() {
         </div>
         <div id="grid-two" className="grids">
           <h3 id="manage-title">Manage</h3>
-          <span id="manage-paragraph">Manage your position at the PLG.</span>
+          <span id="manage-paragraph">manage your Plural Genesis.</span>
           <div id="container-button">
             <button style={{
               backgroundColor: isActive === 1 ? "#FF3395" : "transparent",
@@ -150,15 +203,15 @@ export default function Farm() {
                     <p id="farm-value">1 PLG ($0.10) = $0.001 USDT a month.</p>
                     <div id="box-farm-one">
                       <div id="box-value">
-                        <input onChange={handleChangeValueFarming} id="input-value" placeholder="0.0" type="number" min="0" />
+                        <input onChange={handleChangeValueFarming} id="input-value" value={inputValue} placeholder="0.0" type="number" min="0" maxLength={9} />
                         <p id="convert-time">${valueMonth.toFixed(2)}</p>
                       </div>
                       <div id="box-balance">
-                        <p style={{ display: "flex", alignItems: "center", gap: "5px", color: "#ffff", fontWeight: "700", marginTop: "20px" }}><img src={Block} alt="blocks" />PLG</p>
-                        <p style={{ display: "flex", alignItems: "center", gap: "5px", color: "#ffff", fontWeight: "700", marginTop: "20px", marginLeft: "-40px" }}>
-                          <img style={{ width: "30px" }} src={Wallet} alt="wallet" />
+                        <p className="wallet-value"><img src={Block} alt="blocks" />PLG</p>
+                        <p className="wallet-value-two">
+                          <img style={{ width: "30px", marginTop: "9px", marginRight: "-6px" }} src={Wallet} alt="wallet" />
                           {valueMonth ?
-                            (balance - (valueMonth * 10)) :
+                            (balance - (Math.round(valueMonth * 10))) :
                             (valueMonth > balance ? 0 : balance)
                           }
                         </p>
@@ -169,26 +222,100 @@ export default function Farm() {
                       <div id="usdt-container">
                         <p id="usdt-value">
                           {
-                          (valueMonth * 1 / 100).toFixed(valueMonth <= 0.1 ? 3 : 2)
-                           
+                            (valueMonth * 1 / 100).toFixed(valueMonth <= 0.1 ? 3 : 2)
+
                           }
                         </p>
                       </div>
                       <div id="usdt-container-two">
-                        <p style={{ display: "flex", alignItems: "center", gap: "5px", color: "#ffff", fontWeight: "700", marginTop: "20px" }}><img src={UsdtIcon} alt="blocks" />USDT</p>
-                        <p style={{ display: "flex", alignItems: "center", gap: "5px", color: "#ffff", fontWeight: "700", marginTop: "20px", marginLeft: "-40px" }}>
-                          <img style={{ width: "30px" }} src={Wallet} alt="wallet" />
-                          $0.00
+                        <p className="wallet-value-three"><img src={UsdtIcon} alt="blocks" />USDT</p>
+                        <p className="wallet-value-four">
+                          <img style={{ width: "30px", marginTop: "9px", marginRight: "-9px" }} src={Wallet} alt="wallet" />
+                          {
+                            usdt
+                          }
                         </p>
                       </div>
                     </div>
                     {
                       localStorage.getItem('wallet') ? (
-                        <button className="wallet">Farming</button>
+                        <div>
+                          <button onClick={handleClickYieldFarming} className="wallet">Farming</button>
+
+
+                        </div>
                       )
                         :
-                        <button className="wallet">Connect Wallet</button>
+                        <button onClick={handleClickOpenModal} className="wallet">Connect Wallet</button>
 
+                    }
+
+                    {
+                      modal && <Modal />
+                    }
+
+                  </div>
+                )
+                :
+                ""
+            }
+
+            {
+              isActive === 2 ?
+                (
+                  <div id="active-1">
+                    <p id="farm-paragraph">Reward</p>
+                    <p id="farm-value">1 PLG ($0.10) = $0.001 USDT a month.</p>
+                    <div id="box-farm-one">
+                      <div id="box-value">
+                        <input  id="input-value" value={farming} placeholder="0.0" type="number" min="0" disabled />
+                        <p id="convert-time">${(farming * 10 /100).toFixed(2) }</p>
+                      </div>
+                      <div id="box-balance">
+                        <p className="wallet-value"><img src={Block} alt="blocks" />PLG</p>
+                        <p className="wallet-value-two">
+                          <img style={{ width: "30px", marginTop: "9px", marginRight: "-6px" }} src={Wallet} alt="wallet" />
+                          {
+                            farming 
+                          }
+                        </p>
+                      </div>
+                    </div>
+                    <img id="arrow" src={ArrowIconPink} alt="arrow" />
+                    <div id="box-farm-two">
+                      <div id="usdt-container">
+                        <p id="usdt-value">
+                          {
+                            (farming * 0.10 / 100).toFixed(2)
+
+                          }
+                        </p>
+                      </div>
+                      <div id="usdt-container-two">
+                        <p className="wallet-value-three"><img src={UsdtIcon} alt="blocks" />USDT</p>
+                        <p className="wallet-value-four">
+                          <img style={{ width: "30px", marginTop: "9px", marginRight: "-9px" }} src={Wallet} alt="wallet" />
+                          {
+                            usdt
+                          }
+                        </p>
+                      </div>
+                    </div>
+                    {
+                      localStorage.getItem('wallet') ? (
+                        <div>
+                          <button onClick={handleClickGetRewards} className="wallet">Get Reward</button>
+
+
+                        </div>
+                      )
+                        :
+                        <button onClick={handleClickOpenModal} className="wallet">Connect Wallet</button>
+
+                    }
+
+                    {
+                      modal && <Modal />
                     }
 
                   </div>
@@ -198,15 +325,82 @@ export default function Farm() {
             }
 
 
+            {
+              isActive === 3 ?
+                (
+                  <div id="active-1">
+                    <p id="farm-paragraph">Withdraw</p>
+                    <p id="farm-value">1 PLG ($0.10) = $0.001 USDT a month.</p>
+                    <div id="box-farm-one">
+                      <div id="box-value">
+                        <input onChange={handleChangeValueFarming} id="input-value" value={inputValue} placeholder="0.0" type="number" min="0" maxLength={9} />
+                        <p id="convert-time">${valueMonth.toFixed(2)}</p>
+                      </div>
+                      <div id="box-balance">
+                        <p className="wallet-value"><img src={Block} alt="blocks" />PLG</p>
+                        <p className="wallet-value-two">
+                          <img style={{ width: "30px", marginTop: "9px", marginRight: "-6px" }} src={Wallet} alt="wallet" />
+                          {
+                           farming
+                          }
+                        </p>
+                      </div>
+                    </div>
+                    {
+                      localStorage.getItem('wallet') ? (
+                        <div>
+                          <button onClick={handleClickRemoveYield} className="wallet">Withdraw</button>
+
+
+                        </div>
+                      )
+                        :
+                        <button onClick={handleClickOpenModal} className="wallet">Connect Wallet</button>
+
+                    }
+
+                    {
+                      modal && <Modal />
+                    }
+
+                  </div>
+                )
+                :
+                ""
+            }
           </div>
+
+
 
 
         </div>
         <div id="grid-three" className="grids">
-
+          <div id="container-primary">
+            <p id="your-balance">Your balance</p>
+          </div>
+          <div>
+            <div className="container-primary-balance">
+              <div className="container-balance-plg">
+                <p id="paragraph-farm">balance</p>
+                <p id="h1-plg"><img src={Block} alt="usdt" />PLG</p>
+              </div>
+              <div className="container-amount">
+                <p className="amount" id="dolar-amount">{parseInt(balance).toFixed(2)}</p>
+              </div>
+            </div>
+            <div className="container-primary-balance">
+              <div className="container-balance-plg">
+                <p id="paragraph-usdt">Rated</p>
+                <p id="usdt-amount"><img src={UsdtIcon} alt="usdt-icon" />USDT</p>
+              </div>
+              <div className="container-amount">
+                <p className="amount" id="dolar-amount">${(balance * 0.10).toFixed(2)}</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div id="grid-fuor" className="grids">
-
+          <Charts />
         </div>
       </div>
       <Footer />

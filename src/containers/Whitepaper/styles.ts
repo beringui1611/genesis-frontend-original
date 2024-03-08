@@ -33,6 +33,10 @@ overflow-x:hidden;
         height: 212px;
         justify-content: center;
         align-items: center;
+        &:hover{
+        opacity:0.5;
+        cursor: pointer;
+    }
         a{
             display: flex;
             gap: 10px;
@@ -42,5 +46,6 @@ overflow-x:hidden;
             font-size: 20px;
         }
     }
+
 }
 `

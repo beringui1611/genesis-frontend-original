@@ -22,6 +22,7 @@ function Footer(){
                 <a href=""><img src={DiscordLogo} alt="discord-logo" /></a>
             </div>
             <div className="contact"><h3>Media inquires for Plural Gênesis - contact<a href="">@pluralgenesis.org</a></h3></div>
+            <p id="paragraph-developed">©Technology developed by Next Build</p>
         </Container>
     )
 }
