@@ -23,6 +23,11 @@ background-color:rgba(41, 41, 41, 1);
 height: 365vh;
 max-width: 100vw;
 overflow-x:hidden;
+@media only screen and (max-width: 320px){
+    height: 100vh;
+    overflow-x: hidden;
+}
+
 
 .big-container-one{
 display: flex;
@@ -42,10 +47,6 @@ h1{
     margin-left: 50px;
     font-size: 40px;
     font-weight: 500;
-
-    &:hover{
-        
-    }
 
     a{
         color: rgba(255, 255, 255, 1);
@@ -92,6 +93,64 @@ h1{
        font-weight: 500;
     }
 }
+}
+
+@media only screen and (max-width: 320px){
+
+    #button-menu{
+        background: transparent;
+        border: none;
+        z-index: 99;
+        position: fixed;
+        margin-top:-700px;
+        margin-left: 20px;
+
+        img{
+            height: 15px;
+        }
+    }
+
+    #container-menu{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-decoration: none;
+        z-index: 98;
+        margin-top: -600px;
+        margin-left: 15px;
+        a{
+            color: white;
+        }
+    }
+
+
+    .big-container-one{
+        margin-left: 40px;
+        margin-top: -640px;
+    }
+
+    .container-one{
+        width: 240px;
+
+        h1{
+            font-size: 22px;
+
+            a{
+                margin-left: -25px;
+            }
+
+            img{
+                height: 10px;
+            }
+        }
+
+        h2{
+            font-size: 15px;
+            margin-left: 25px;
+        }
+    }
+
 }
 `
 
@@ -159,6 +218,10 @@ width: 1930px;
 height: 740px;
 margin-top: -20px;
 margin-left: -10px;
+@media only screen and (max-width: 320px){
+    width: 320px;
+    margin-left: 1px;
+}
 `
 
 export const BlocksTwo = styled.img`
@@ -279,4 +342,5 @@ export const ContainerThree = styled.div`
         }
     }
 }
+
 `

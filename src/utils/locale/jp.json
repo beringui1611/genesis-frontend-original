@@ -1,0 +1,14 @@
+{
+    "translation": {
+        "header": {
+            "buyNow": "今すぐ購入！",
+            "about": "ジェネシスについて",
+            "community": "コミュニティ",
+            "farm": "ファーム",
+            "whitepaper": "ホワイトペーパー",
+            "connect": "ウォレットに接続",
+            "desconnect": "切断",
+            "viewExplorer": "エクスプローラーを表示"
+        }
+    }
+}

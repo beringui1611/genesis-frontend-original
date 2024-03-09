@@ -234,6 +234,12 @@ h2{
     cursor: pointer;
 }
 
+@media only screen and (min-width:200px) and (max-width:400px) {
+    
+}
+
+
+
 
 
 

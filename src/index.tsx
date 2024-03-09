@@ -1,10 +1,11 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import MyRoutes from './routes/Router';
 import GlobalStyles from './styles/globalStyles';
 import { Slide, ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import styled from "styled-components"; 
+import './utils/i18n';
+
 
 const StyledToastContainer = styled(ToastContainer)`
 .Toastify__toast {
@@ -13,7 +14,6 @@ const StyledToastContainer = styled(ToastContainer)`
 
 }
 
-/* Defina o estilo padrão do ToastContainer */
 .Toastify__toast-container {
   width: 320px; /* Defina a largura desejada */
   position: fixed; /* Mantenha o ToastContainer fixo na tela */

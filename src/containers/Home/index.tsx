@@ -3,19 +3,41 @@ import Footer from "../../components/Footer";
 import { Container, Blocks, BlocksTwo, ContainerTwo, ContainerThree } from "./styles";
 import BackgroundImg from "../../assets/Home-assets/blocks.svg"
 import ArrowRight from "../../assets/Home-assets/Arrow 1.svg";
+import ThreeLines from "../../assets/Media-assets/three-lines.svg"
+import CloseLines from "../../assets/Media-assets/close-lines.svg"
 import Cell from "../../assets/Home-assets/cellphone.svg"
 import Notification from "../../assets/Home-assets/notification.svg"
 import QrCode from "../../assets/Home-assets/QR Code.svg"
 import { Link } from "react-router-dom"
-
+import { useState } from "react"
 
 function Home() {
+  // const [menu, setMenu] = useState(false)
 
+  // function handleButton() {
+  //   setMenu(!menu)
+  // }
 
   return (
     <Container>
       <Header />
       <Blocks src={BackgroundImg} />
+
+      {/* <button onClick={handleButton} id="button-menu"><img src={menu ? CloseLines : ThreeLines} alt="open-menu" /></button>
+      {
+        menu &&
+        <div id="background-menu">
+          <div id="container-menu">
+            <Link to="/buy">Buy It Now!</Link>
+            <a href="/#div-2">About Gênesis</a>
+            <a href="/#div-3">Community</a>
+            <Link to="/farm">Farm</Link>
+            <Link to="/whitepaper">Whitepaper</Link>
+          </div>
+        </div>
+      } */}
+
+
       <div className="big-container-one">
         <div className="container-one">
           <h1><Link to="/buy">Buy It Now!<img src={ArrowRight} alt="arrow" /></Link></h1>

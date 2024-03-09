@@ -1,0 +1,15 @@
+{
+    "translation":{
+        "header":{
+            "buyNow": "¡Cómpralo Ahora!",
+            "about": "Sobre Génesis",
+            "community": "Comunidad",
+            "farm": "Granja",
+            "whitepaper": "Libro Blanco",
+            "connect":"Conectar Billetera",
+            "desconnect":"Desconectar",
+            "viewExplorer":"Ver Explorador"
+        }
+    }
+}
+

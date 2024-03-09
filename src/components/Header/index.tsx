@@ -3,12 +3,16 @@ import LogoWithName from "../../assets/Header-images/logo-genesis.png";
 import LogoNotName from '../../assets/Header-images/somente-bloco.png';
 import BnbLogo from '../../assets/Header-images/bnb-logo-button.png';
 import ArrowIcon from '../../assets/Header-images/arrow.png';
-import { useEffect, useState } from "react";
-import { Link ,useLocation } from "react-router-dom"
+import { useEffect, useState} from "react";
+import { Link } from "react-router-dom"
 import Modal from "../Modal";
 import { toast } from 'react-toastify'
 import PolygonLogo from '../../assets/Header-images/plygon.png';
 import { desconnect, switchNetworkBsc, switchNetworkPolygon } from "../../service/Web3Service";
+import { useTranslation} from "react-i18next";
+
+
+
 
 
 
@@ -16,10 +20,15 @@ export default function Header() {
     const [modal, setModal] = useState<boolean>(false);
     const [wallet, setWallet] = useState<String>("");
     const [navbar, setNavBar] = useState<boolean>(false);
-    const [switchNetwork, setSwitchNetwork] = useState<number>(1);
     const [menu, setMenu] = useState<number>(1);
-    const { pathname } = useLocation()
+    const [select, setSelect] = useState<boolean>(false);
+    const {t, i18n} = useTranslation();
 
+
+    function handleChangeLanguage(language: string){
+        i18n.changeLanguage(language);
+    }
+ 
 
 
     useEffect(() => {
@@ -66,6 +75,10 @@ export default function Header() {
         }
     }
 
+    function openSelect() {
+        setSelect(!select);
+    }
+
     async function switchNet() {
         try {
             if (menu === 1) {
@@ -85,29 +98,31 @@ export default function Header() {
 
 
     return (
-        <Container>
+        <Container id="container-primary">
             <div id="div-one">
                 <a href="/#div-1"><img src={LogoWithName} alt="Logo" /></a>
                 <div id="nav-bar">
-                    <Link to="/buy">Buy It Now!</Link>
-                    <a href="/#div-2">About Gênesis</a>
-                    <a href="/#div-3">Community</a>
-                    <Link to="/farm">Farm</Link>
-                    <Link to="/whitepaper">Whitepaper</Link>
+                    <Link to="/buy">{t("header.buyNow")}</Link>
+                    <a href="/#div-2">{t("header.about")}</a>
+                    <a href="/#div-3">{t("header.community")}</a>
+                    <Link to="/farm">{t("header.farm")}</Link>
+                    <Link to="/whitepaper">{t("header.whitepaper")}</Link>
                 </div>
                 <div id="box-lg">
                     <img src={LogoNotName} alt="Logo" />
-                    <select >
-                        <option></option>
-                        <option>EN-US</option>
-                        <option>ES-ES</option>
-                        <option>PT-BR</option>
-                        <option>عربي-سا</option>
-                        <option>日本語-日本</option>
-                        <option>國語-中國</option>
-                    </select>
+                    <button onClick={openSelect} id="button-lg"></button>
+                    {
+                        select && 
+                        <div id="select-lg">
+                            <button onClick={() => handleChangeLanguage("en")} className="btn-change">EN-US</button>
+                            <button onClick={() => handleChangeLanguage("es")} className="btn-change">ES-ES</button>
+                            <button onClick={() => handleChangeLanguage("pt")} className="btn-change">PT-BR</button>
+                            <button onClick={() => handleChangeLanguage("ar")} className="btn-change">عربي-سا</button>
+                            <button onClick={() => handleChangeLanguage("jp")} className="btn-change">日本語-日本</button>
+                            <button onClick={() => handleChangeLanguage("ch")} className="btn-change">國語-中國</button>
+                        </div>
+                    }
                 </div>
-
                 <div id="box-button">
                     <div id="box-network">
                         <button onClick={handleOpenMenu} style={{
@@ -150,7 +165,7 @@ export default function Header() {
 
 
                         ) : (
-                            <button onClick={handleClickOpenModal} id="button-wallet">CONNECT WALLET</button>
+                            <button onClick={handleClickOpenModal} id="button-wallet">{t("header.connect")}</button>
 
                         )
                     }
@@ -158,8 +173,8 @@ export default function Header() {
                     {
                         navbar &&
                         <div id="menu-nav">
-                            <button onClick={handleClickDesconnect} id="btn-desconnect">Desconect</button>
-                            <a id="block-explorer" href={`https://testnet.bscscan.com/address/${wallet}`}>View Explorer</a>
+                            <button onClick={handleClickDesconnect} id="btn-desconnect">{t("header.desconnect")}</button>
+                            <a id="block-explorer" href={`https://testnet.bscscan.com/address/${wallet}`}>{t("header.viewExplorer")}</a>
                         </div>
                     }
 

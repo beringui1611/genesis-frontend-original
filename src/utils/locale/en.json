@@ -1,0 +1,14 @@
+{
+    "translation": {
+        "header": {
+            "buyNow": "Buy Now!",
+            "about": "About Genesis",
+            "community": "Community",
+            "farm": "Farm",
+            "whitepaper": "Whitepaper",
+            "connect": "Connect Wallet",
+            "desconnect": "Disconnect",
+            "viewExplorer": "View Explorer"
+        }
+    }
+}

@@ -8,6 +8,8 @@ width: 100vw;
 margin-top: 10px;
 margin-left: 40px;
 
+
+
 #div-one{
     display: flex;
     align-items: center;
@@ -235,6 +237,43 @@ margin-left: 40px;
    
 }
 
+#button-lg{
+    background-image:url(${Language});
+    background-size:cover;
+    width:30px;
+    height:30px;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+}
 
+#select-lg{
+    position: absolute;
+    margin-left:67px;
+    margin-top:40px;
+    background-color:#ffff;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    width:100px;
+    height:180px;
+    padding-top:10px;
+  
+}
+
+.btn-change{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:320px) and (max-width:425px) {
+display: none;
+}
 
 `
+
+
+

@@ -1,0 +1,14 @@
+{
+    "translation": {
+        "header": {
+            "buyNow": "立即购买！",
+            "about": "关于 Genesis",
+            "community": "社区",
+            "farm": "农场",
+            "whitepaper": "白皮书",
+            "connect": "连接钱包",
+            "desconnect": "断开连接",
+            "viewExplorer": "查看浏览器"
+        }
+    }
+}

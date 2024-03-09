@@ -2,7 +2,9 @@ import styled from "styled-components"
 
 
 export const Container = styled.div`
-
+@media only screen and (max-width: 320px){
+    display: none;
+}
 
 .words-footer{
 display: flex;
@@ -49,4 +51,5 @@ margin-top: 70px;
    margin-left: 45%;
    margin-top:5%;
 }
+
 `
