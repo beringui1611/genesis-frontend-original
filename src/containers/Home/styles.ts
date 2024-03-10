@@ -82,17 +82,18 @@ border-radius: 43px ;
     margin-left: 300px;
     margin-top: 55px;
     gap: 80px;
-h1{
-    width:570px;
-    font-size: 28px;
-    margin-top: 55px;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 300;
-    span{
+
+    h1{
+     width:570px;
+     font-size: 28px;
+     margin-top: 55px;
+     color: rgba(255, 255, 255, 1);
+     font-weight: 300;
+     span{
        font-size:42px ;
        font-weight: 500;
+     }
     }
-}
 }
 
 @media only screen and (max-width: 320px){

@@ -256,17 +256,19 @@ margin-left: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:10px;
+    gap:6px;
     width:100px;
-    height:180px;
+    height:200px;
     padding-top:10px;
-  
 }
 
 .btn-change{
-    background-color: transparent;
     border:none;
     cursor: pointer;
+    width: 90px;
+    height:25px;
+    border-radius: 5px;
+    font-weight:700;
 }
 
 @media only screen and (min-width:320px) and (max-width:425px) {

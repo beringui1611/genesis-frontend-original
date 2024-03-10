@@ -22,11 +22,13 @@ export default function Header() {
     const [navbar, setNavBar] = useState<boolean>(false);
     const [menu, setMenu] = useState<number>(1);
     const [select, setSelect] = useState<boolean>(false);
+    const [styleLg, setStyleLg] = useState<number>(1);
     const {t, i18n} = useTranslation();
 
 
-    function handleChangeLanguage(language: string){
+    function handleChangeLanguage(language: string, position: number){
         i18n.changeLanguage(language);
+        setStyleLg(position);
     }
  
 
@@ -114,12 +116,36 @@ export default function Header() {
                     {
                         select && 
                         <div id="select-lg">
-                            <button onClick={() => handleChangeLanguage("en")} className="btn-change">EN-US</button>
-                            <button onClick={() => handleChangeLanguage("es")} className="btn-change">ES-ES</button>
-                            <button onClick={() => handleChangeLanguage("pt")} className="btn-change">PT-BR</button>
-                            <button onClick={() => handleChangeLanguage("ar")} className="btn-change">عربي-سا</button>
-                            <button onClick={() => handleChangeLanguage("jp")} className="btn-change">日本語-日本</button>
-                            <button onClick={() => handleChangeLanguage("ch")} className="btn-change">國語-中國</button>
+                            <button style={{
+                                backgroundColor: styleLg === 1 ? "#FF3395" : "transparent",
+                                color: styleLg === 1 ? "#ffff" : "#000"
+                            }} 
+                            onClick={() => handleChangeLanguage("en", 1)} className="btn-change">EN-US</button>
+
+                            <button style={{
+                                backgroundColor: styleLg === 2 ? "#FF3395" : "transparent",
+                                color: styleLg === 2 ? "#ffff" : "#000"
+                            }}  onClick={() => handleChangeLanguage("es", 2)} className="btn-change">ES-ES</button>
+
+                            <button style={{
+                                backgroundColor: styleLg === 3 ? "#FF3395" : "transparent",
+                                color: styleLg === 3 ? "#ffff" : "#000"
+                            }}  onClick={() => handleChangeLanguage("pt", 3)} className="btn-change">PT-BR</button>
+
+                            <button style={{
+                                backgroundColor: styleLg === 4 ? "#FF3395" : "transparent",
+                                color: styleLg === 4 ? "#ffff" : "#000"
+                            }}  onClick={() => handleChangeLanguage("ar", 4)} className="btn-change">عربي-سا</button>
+
+                            <button style={{
+                                backgroundColor: styleLg === 5 ? "#FF3395" : "transparent",
+                                color: styleLg === 5 ? "#ffff" : "#000"
+                            }}  onClick={() => handleChangeLanguage("jp", 5)} className="btn-change">日本語-日本</button>
+
+                            <button style={{
+                                backgroundColor: styleLg === 6 ? "#FF3395" : "transparent",
+                                color: styleLg === 6 ? "#ffff" : "#000"
+                            }}  onClick={() => handleChangeLanguage("ch", 6)} className="btn-change">國語-中國</button>
                         </div>
                     }
                 </div>
