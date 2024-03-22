@@ -8,10 +8,10 @@ function MyRoutes(){
     return (
         <Router>
           <Routes>
+          <Route path="/" element={<Home/>} />
             <Route path="/buy" element={<Buy/>}/>
             <Route path="/whitepaper" element={<Whitepaper/>}/>
             <Route path="/farm" element={<Farm/>}/>
-            <Route path="/" element={<Home/>} />
           </Routes>
         </Router>
     );

@@ -62,14 +62,14 @@ function Buy() {
       <div className="buy-containers">
         <div className="itens-buy-container">
           <h2>To Convert</h2>
-          <input onChange={swap} className="input-buy" placeholder="0" min="0" type="number" />
+          <input onChange={swap} className="input-buy" placeholder="$0.00" min="0" type="number" />
         </div>
         <button id="change-value">
           <img src={ArrowBuy} alt="teste" />
         </button>
         <div className="itens-buy-container">
           <h2>For</h2>
-          <p id="value-usdt-amount">{value ? (value * 10).toFixed(2) : "$0.00"}</p>
+          <p id="value-usdt-amount">{value ? (value * 10).toFixed(2) : "0"}</p>
         </div>
         {
           !localStorage.getItem('wallet') ?
@@ -89,10 +89,10 @@ function Buy() {
       <div className="div-coins">
         <div>
           <img src={ Usdt} alt="arrow" />
-          <h3>USDT</h3>
+          <h3 className="usdt-name">USDT</h3>
         </div>
         <div>
-          <img src={Blocks} alt={"test"} />
+          <img className="img-plg" src={Blocks} alt={"test"} />
           <h3>PLG</h3>
         </div>
        

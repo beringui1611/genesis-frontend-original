@@ -231,16 +231,871 @@ h2{
     z-index: 2;
     position: absolute;
     border: none;
-    cursor: pointer;
 }
 
-@media only screen and (min-width:200px) and (max-width:400px) {
+@media only screen and (min-width:320px) and (max-width:374px) {
+    height: 130vh;
+
+     .buy-title{
+        margin-left: 10px;
+
+        h1{
+        color: #FF54A6;
+        font-size: 30px;
+        }
+
+        p{
+        color: #ffff;
+        font-size: 15px;
+        width: 300px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        }
+
+        a{
+            color: #FF54A6;
+            font-size: 15px;
+
+            img{
+                height: 10px;
+            }
+        }
+     }
+
+
+        .buy-containers{        
+            #btn-wallet{
+          margin-top: 15px;
+          width: 240px;
+          height: 60px;
+          border-radius: 15px;
+          border: none;
+          background: #FC72FF63;
+          color: #FC72FF;
+          font-weight: 700;
+          font-size: 20px;
+          cursor: pointer;        
+          &:hover{
+              opacity: 0.8;
+          }
+          &:active{
+              opacity: 0.6;
+          }
+        }
+
+        .itens-buy-container{
+         width: 300px;
+         height: 140px;
+
+         h2{
+             margin-top: 15px;
+             font-size: 14px;
+         }
+
+            .input-buy{
+                margin-top: -1px;
+
+                &:focus{
+                 color: #ffffff;
+                 font-size: 30px;
+                 font-weight: 600;
+                 padding-top: 19px;
+                }
+
+                &::placeholder{
+                 color: #ffffff;
+                 font-size: 30px;
+                 font-weight: 600;
+                }
+            }
+        }
+    }
+
+    #change-value{
+        margin-top: -125px;
+        img{
+
+        }
+    }
+
+    #value-usdt-amount{
+        font-size: 30px;
+    }
+
+    .div-coins{
+        margin-left: 190px;
+        margin-top: -560px;
+        gap: 110px;
+
+         div{
+         display: flex;
+         justify-content: center;
+         color: rgba(255, 255, 255, 1);
+         background: rgba(0, 0, 0, 0.52);
+         border-radius: 10px;
+         width: 100px;
+         height: 40px;
+         padding: 10px;
+         gap: 15px;
+
+         h3{
+             margin-right: 7px;
+             margin-top: 1px;
+             font-size: 16px;
+             font-weight: 600;
+         }
+
+        }
+    }
+
     
 }
 
+@media only screen and (min-width:375px) and (max-width:425px){
+    height: 130vh;
+
+     .buy-title{
+        margin-left: 10px;
+
+        h1{
+        color: #FF54A6;
+        font-size: 30px;
+        }
+
+        p{
+        color: #ffff;
+        font-size: 15px;
+        width: 300px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        }
+
+        a{
+            color: #FF54A6;
+            font-size: 15px;
+
+            img{
+                height: 10px;
+            }
+        }
+     }
 
 
+        .buy-containers{        
+            #btn-wallet{
+          margin-top: 15px;
+          width: 240px;
+          height: 60px;
+          border-radius: 15px;
+          border: none;
+          background: #FC72FF63;
+          color: #FC72FF;
+          font-weight: 700;
+          font-size: 20px;
+          cursor: pointer;        
+          &:hover{
+              opacity: 0.8;
+          }
+          &:active{
+              opacity: 0.6;
+          }
+        }
+
+        .itens-buy-container{
+         width: 350px;
+         height: 140px;
+
+         h2{
+             margin-top: 15px;
+             font-size: 14px;
+         }
+
+            .input-buy{
+                margin-top: -1px;
+
+                &:focus{
+                 color: #ffffff;
+                 font-size: 30px;
+                 font-weight: 600;
+                 padding-top: 19px;
+                }
+
+                &::placeholder{
+                 color: #ffffff;
+                 font-size: 30px;
+                 font-weight: 600;
+                }
+            }
+        }
+    }
+
+    #change-value{
+        margin-top: -125px;
+        img{
+
+        }
+    }
+
+    #value-usdt-amount{
+        font-size: 30px;
+    }
+
+    .div-coins{
+        margin-left: 240px;
+        margin-top: -560px;
+        gap: 110px;
+
+         div{
+         display: flex;
+         justify-content: center;
+         color: rgba(255, 255, 255, 1);
+         background: rgba(0, 0, 0, 0.52);
+         border-radius: 10px;
+         width: 100px;
+         height: 40px;
+         padding: 10px;
+         gap: 15px;
+
+         h3{
+             margin-right: 7px;
+             margin-top: 1px;
+             font-size: 16px;
+             font-weight: 600;
+         }
+
+        }
+    }
+}
+
+@media only screen and (min-width:426px) and (max-width:767px){
+    height: 130vh;
+
+.buy-title{
+   margin-left: 10px;
+
+   h1{
+   color: #FF54A6;
+   font-size: 30px;
+   }
+
+   p{
+   color: #ffff;
+   font-size: 17px;
+   width: 400px;
+   margin-top: 5px;
+   margin-bottom: 15px;
+   }
+
+   a{
+       color: #FF54A6;
+       font-size: 18px;
+
+       img{
+           height: 10px;
+       }
+   }
+}
 
 
+   .buy-containers{        
+       #btn-wallet{
+     margin-top: 15px;
+     width: 240px;
+     height: 60px;
+     border-radius: 15px;
+     border: none;
+     background: #FC72FF63;
+     color: #FC72FF;
+     font-weight: 700;
+     font-size: 20px;
+     cursor: pointer;        
+     &:hover{
+         opacity: 0.8;
+     }
+     &:active{
+         opacity: 0.6;
+     }
+   }
 
+   .itens-buy-container{
+    width: 400px;
+    height: 145px;
+
+    h2{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+       .input-buy{
+           margin-top: 10px;
+
+           &:focus{
+            color: #ffffff;
+            font-size: 35px;
+            font-weight: 600;
+            padding-top: 19px;
+           }
+
+           &::placeholder{
+            color: #ffffff;
+            font-size: 35px;
+            font-weight: 600;
+           }
+       }
+   }
+}
+
+#change-value{
+   margin-top: -125px;
+   img{
+
+   }
+}
+
+#value-usdt-amount{
+   font-size: 40px;
+}
+
+.div-coins{
+   margin-left: 290px;
+   margin-top: -575px;
+   gap: 115px;
+
+    div{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0.52);
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    gap: 15px;
+
+    h3{
+        margin-right: 7px;
+        margin-top: 1px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+   }
+}
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+    height: 130vh;
+
+.buy-title{
+   margin-left: 20px;
+
+   h1{
+   color: #FF54A6;
+   font-size: 30px;
+   }
+
+   p{
+   color: #ffff;
+   font-size: 18px;
+   width: 500px;
+   margin-top: 5px;
+   margin-bottom: 15px;
+   }
+
+   a{
+       color: #FF54A6;
+       font-size: 18px;
+
+       img{
+           height: 10px;
+       }
+   }
+}
+
+
+   .buy-containers{        
+       #btn-wallet{
+     margin-top: 15px;
+     width: 300px;
+     height: 65px;
+     border-radius: 15px;
+     border: none;
+     background: #FC72FF63;
+     color: #FC72FF;
+     font-weight: 700;
+     font-size: 20px;
+     cursor: pointer;        
+     &:hover{
+         opacity: 0.8;
+     }
+     &:active{
+         opacity: 0.6;
+     }
+   }
+
+   .itens-buy-container{
+    width: 600px;
+    height: 160px;
+
+    h2{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+       .input-buy{
+           margin-top: 10px;
+
+           &:focus{
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: 600;
+           }
+
+           &::placeholder{
+            color: #ffffff;
+            font-size: 35px;
+            font-weight: 600;
+           }
+       }
+   }
+}
+
+#change-value{
+   margin-top: -125px;
+   img{
+
+   }
+}
+
+#value-usdt-amount{
+   font-size: 40px;
+}
+
+.div-coins{
+   margin-left: 560px;
+   margin-top: -600px;
+   gap: 130px;
+
+    div{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0.52);
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    gap: 15px;
+
+    h3{
+        margin-right: 7px;
+        margin-top: 1px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+   }
+}
+}
+
+@media only screen and (min-width:1024px) and (max-width:1200px){
+    height: 140vh;
+
+.buy-title{
+   margin-left: 40px;
+
+   h1{
+   color: #FF54A6;
+   font-size: 30px;
+   }
+
+   p{
+   color: #ffff;
+   font-size: 18px;
+   width: 500px;
+   margin-top: 5px;
+   margin-bottom: 15px;
+   }
+
+   a{
+       color: #FF54A6;
+       font-size: 18px;
+
+       img{
+           height: 10px;
+       }
+   }
+}
+
+
+   .buy-containers{        
+       #btn-wallet{
+     margin-top: 15px;
+     width: 300px;
+     height: 65px;
+     border-radius: 15px;
+     border: none;
+     background: #FC72FF63;
+     color: #FC72FF;
+     font-weight: 700;
+     font-size: 20px;
+     cursor: pointer;        
+     &:hover{
+         opacity: 0.8;
+     }
+     &:active{
+         opacity: 0.6;
+     }
+   }
+
+   .itens-buy-container{
+    width: 600px;
+    height: 160px;
+
+    h2{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+       .input-buy{
+           margin-top: 10px;
+
+           &:focus{
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: 600;
+           }
+
+           &::placeholder{
+            color: #ffffff;
+            font-size: 35px;
+            font-weight: 600;
+           }
+       }
+   }
+}
+
+#change-value{
+   margin-top: -125px;
+   img{
+
+   }
+}
+
+#value-usdt-amount{
+   font-size: 40px;
+}
+
+.div-coins{
+   margin-left: 690px;
+   margin-top: -600px;
+   gap: 130px;
+
+    div{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0.52);
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    gap: 15px;
+
+    h3{
+        margin-right: 7px;
+        margin-top: 1px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+   }
+}
+}
+
+@media only screen and (min-width:1201px) and (max-width:1300px){
+    height: 140vh;
+
+.buy-title{
+   margin-left: 40px;
+
+   h1{
+   color: #FF54A6;
+   font-size: 30px;
+   }
+
+   p{
+   color: #ffff;
+   font-size: 18px;
+   width: 500px;
+   margin-top: 5px;
+   margin-bottom: 15px;
+   }
+
+   a{
+       color: #FF54A6;
+       font-size: 18px;
+
+       img{
+           height: 10px;
+       }
+   }
+}
+
+
+   .buy-containers{        
+       #btn-wallet{
+     margin-top: 15px;
+     width: 400px;
+     height: 65px;
+     border-radius: 15px;
+     border: none;
+     background: #FC72FF63;
+     color: #FC72FF;
+     font-weight: 700;
+     font-size: 20px;
+     cursor: pointer;        
+     &:hover{
+         opacity: 0.8;
+     }
+     &:active{
+         opacity: 0.6;
+     }
+   }
+
+   .itens-buy-container{
+    width: 600px;
+    height: 180px;
+
+    h2{
+        margin-top: 25px;
+        font-size: 17px;
+    }
+
+       .input-buy{
+           margin-top: 15px;
+
+           &:focus{
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: 600;
+           }
+
+           &::placeholder{
+            color: #ffffff;
+            font-size: 35px;
+            font-weight: 600;
+           }
+       }
+   }
+}
+
+#change-value{
+   margin-top: -125px;
+   img{
+
+   }
+}
+
+#value-usdt-amount{
+   font-size: 40px;
+}
+
+.div-coins{
+   margin-left: 770px;
+   margin-top: -640px;
+   gap: 150px;
+
+    div{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0.52);
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    gap: 15px;
+
+    h3{
+        margin-right: 7px;
+        margin-top: 1px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+   }
+}
+}
+
+@media only screen and (min-width:1301px) and (max-width:1439px){
+    height: 150vh;
+
+.buy-title{
+   margin-left: 40px;
+
+   h1{
+   color: #FF54A6;
+   font-size: 30px;
+   }
+
+   p{
+   color: #ffff;
+   font-size: 18px;
+   width: 500px;
+   margin-top: 5px;
+   margin-bottom: 15px;
+   }
+
+   a{
+       color: #FF54A6;
+       font-size: 18px;
+
+       img{
+           height: 10px;
+       }
+   }
+}
+
+
+   .buy-containers{        
+       #btn-wallet{
+     margin-top: 15px;
+     width: 400px;
+     height: 65px;
+     border-radius: 15px;
+     border: none;
+     background: #FC72FF63;
+     color: #FC72FF;
+     font-weight: 700;
+     font-size: 20px;
+     cursor: pointer;        
+     &:hover{
+         opacity: 0.8;
+     }
+     &:active{
+         opacity: 0.6;
+     }
+   }
+
+   .itens-buy-container{
+    width: 600px;
+    height: 180px;
+
+    h2{
+        margin-top: 25px;
+        font-size: 17px;
+    }
+
+       .input-buy{
+           margin-top: 15px;
+
+           &:focus{
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: 600;
+           }
+
+           &::placeholder{
+            color: #ffffff;
+            font-size: 35px;
+            font-weight: 600;
+           }
+       }
+   }
+}
+
+#change-value{
+   margin-top: -125px;
+   img{
+
+   }
+}
+
+#value-usdt-amount{
+   font-size: 40px;
+}
+
+.div-coins{
+   margin-left: 830px;
+   margin-top: -640px;
+   gap: 150px;
+
+    div{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0.52);
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    gap: 15px;
+
+    h3{
+        margin-right: 7px;
+        margin-top: 1px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+   }
+}
+}
+
+@media only screen and (min-width:1440px) and (max-width:1441px){
+    height: 160vh;
+
+    .buy-containers{        
+       #btn-wallet{
+     margin-top: 15px;
+     width: 700px;
+     height: 75px;
+     border-radius: 15px;
+     border: none;
+     background: #FC72FF63;
+     color: #FC72FF;
+     font-weight: 700;
+     font-size: 23px;
+     cursor: pointer;        
+     &:hover{
+         opacity: 0.8;
+     }
+     &:active{
+         opacity: 0.6;
+     }
+   }
+
+}
+    .div-coins{
+   margin-left: 970px;
+   margin-top: -710px;
+   gap: 175px;
+
+    div{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0.52);
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+    gap: 15px;
+
+    .img-plg{
+        height: 30px;
+        margin-left: -10px;
+    }
+
+    h3{
+        margin-right: 7px;
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+   }
+}
+}
 `

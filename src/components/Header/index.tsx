@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container, Image } from "./styles";
 import LogoWithName from "../../assets/Header-images/logo-genesis.png";
 import LogoNotName from '../../assets/Header-images/somente-bloco.png';
 import BnbLogo from '../../assets/Header-images/bnb-logo-button.png';
@@ -102,7 +102,7 @@ export default function Header() {
     return (
         <Container id="container-primary">
             <div id="div-one">
-                <a href="/#div-1"><img src={LogoWithName} alt="Logo" /></a>
+                <a href="/#div-1"><Image src={LogoWithName} alt="Logo" className="logo-with-name" /></a>
                 <div id="nav-bar">
                     <Link to="/buy">{t("header.buyNow")}</Link>
                     <a href="/#div-2">{t("header.about")}</a>
@@ -162,7 +162,7 @@ export default function Header() {
                             {
                                 menu === 2 ?
                                     (
-                                        <button onClick={switchNet} id="rpc-polygon"><img id="polygon-rede" src={PolygonLogo} alt="binance" />Polygon</button>
+                                        <button onClick={switchNet} id="rpc-polygon"><img id="polygon-rede" src={PolygonLogo} alt="binance" /><p>Polygon</p></button>
 
                                     )
                                     :
@@ -172,7 +172,7 @@ export default function Header() {
                             {
                                 menu === 1 ?
                                     (
-                                        <button onClick={switchNet} id="rpc"><img id="bnb-rede" src={BnbLogo} alt="binance" />BNB CHAIN</button>
+                                        <button onClick={switchNet} id="rpc"><img id="bnb-rede" src={BnbLogo} alt="binance" /><p>BNB CHAIN</p></button>
                                     )
                                     :
                                     ""

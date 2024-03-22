@@ -2,11 +2,26 @@ import styled from "styled-components";
 import Language from '../../assets/Header-images/language.png';
 
 
+export const Image = styled.img``
+
 export const Container = styled.div`
 height:10vh;
 width: 100vw;
 margin-top: 10px;
 margin-left: 40px;
+
+
+@media only screen and (max-width: 767px){
+    display: none;
+}
+
+@media only screen and (min-width:768px) and (max-width:868px){
+   display: none;
+}
+
+@media only screen and (min-width:869px) and (max-width:969px){
+    display: none;
+}
 
 
 
@@ -15,19 +30,21 @@ margin-left: 40px;
     align-items: center;
 
     select {
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            background: url(${Language});
-            background-size: cover;
-            padding: 10px; 
-            border: none; 
-            width: 40px; 
+     appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     background: url(${Language});
+     background-size: cover;
+     padding: 10px; 
+     border: none; 
+     width: 40px; 
+    
+    }
 
-          
-          }
+}
 
-        }
+
+
 
 
 #polygon-rede{
@@ -271,10 +288,758 @@ margin-left: 40px;
     font-weight:700;
 }
 
-@media only screen and (min-width:320px) and (max-width:425px) {
-display: none;
+@media only screen and (min-width:970px) and (max-width:1023px){
+    margin-left: -10px;
+    position: relative;
+
+    #button-conected{
+        width: 100px;
+        margin-left: -35px;
+    }
+
+    #button-wallet{
+        width: 100px;
+        margin-left: -25px;
+    }
+
+   #box-lg{
+    display: flex;
+    gap: 50px;
+    margin-left: 30px;
+
+    img{
+        display: none;
+    }
+    option{
+        border: none;
+    }
+    select{
+        border: none;
+        cursor: pointer;
+    }
+   
+    #select-lg{
+        margin-left: -34px;
+    }
+    }
+    .logo-with-name{
+        height: 60px;
+    }
+
+
+    #nav-bar{
+     display: flex;
+     align-items: center;
+     gap: 75px;
+     text-decoration: none;
+     margin-left:50px;
+    
+     a{
+        margin-left: -40px;
+        margin-right: 10px;
+         font-size: 10px;
+         color:#ADA3A3;
+         font-weight: bold;
+         position: relative;
+         &::after{
+             content: " ";
+             width: 0%;
+             height: 3px;
+             background: rgba(255, 51, 149, 1);
+             position: absolute;
+             bottom: -4px;
+             left: 50%;
+             transform: translateX(-50%);
+             transition: 0.5s ease-in-out;
+         }
+         &:hover::after{
+             width: 100%;
+         }
+     }
+    
+    }
+
+    #box-network{
+        margin-left: -40px;
+    }
+
+    #rpc-polygon{
+        width: 100px;
+        p{
+            margin-left: -10px;
+        }
+    }
+
+    #rpc{
+        width: 100px;
+        p{
+            margin-left: -10px;
+        }
+    }
+
+    #polygon-rede{
+        height: 25px;
+    }
+
+    #menu-nav{
+        margin-top: -15px;
+        margin-right: -85px;
+        width: 100px;
+        button{
+            font-size: 12px;
+            margin-top: 7px;
+        }
+
+        a{
+            font-size: 12px;
+            margin-top: -5px;
+        }
+    }
+    
 }
 
+@media only screen and (min-width:1024px) and (max-width:1123px){
+    margin-left: -10px;
+    position: relative;
+
+    #button-conected{
+        width: 130px;
+        margin-left: -25px;
+    }
+
+    #button-wallet{
+        width: 130px;
+        margin-left: -25px;
+    }
+
+   #box-lg{
+    display: flex;
+    gap: 50px;
+    margin-left: 40px;
+
+    img{
+        display: none;
+    }
+    option{
+        border: none;
+    }
+    select{
+        border: none;
+        cursor: pointer;
+    }
+   
+    #select-lg{
+        margin-left: -34px;
+    }
+    }
+    .logo-with-name{
+        height: 60px;
+    }
+
+
+    #nav-bar{
+     display: flex;
+     align-items: center;
+     gap: 75px;
+     text-decoration: none;
+     margin-left:50px;
+    
+     a{
+        margin-left: -40px;
+        margin-right: 10px;
+         font-size: 10px;
+         color:#ADA3A3;
+         font-weight: bold;
+         position: relative;
+         &::after{
+             content: " ";
+             width: 0%;
+             height: 3px;
+             background: rgba(255, 51, 149, 1);
+             position: absolute;
+             bottom: -4px;
+             left: 50%;
+             transform: translateX(-50%);
+             transition: 0.5s ease-in-out;
+         }
+         &:hover::after{
+             width: 100%;
+         }
+     }
+    
+    }
+
+    #box-network{
+        margin-left: -40px;
+    }
+
+    #rpc-polygon{
+        width: 100px;
+        p{
+            margin-left: -10px;
+        }
+    }
+
+    #rpc{
+        width: 100px;
+        p{
+            margin-left: -10px;
+        }
+    }
+
+    #polygon-rede{
+        height: 25px;
+    }
+
+    #menu-nav{
+        margin-top: -15px;
+        margin-right: -73px;
+        width: 100px;
+        button{
+            font-size: 12px;
+            margin-top: 7px;
+        }
+
+        a{
+            font-size: 12px;
+            margin-top: -5px;
+        }
+    }
+}
+
+@media only screen and (min-width:1124px) and (max-width:1224px){
+    margin-left: 10px;
+    position: relative;
+
+    #button-conected{
+        width: 130px;
+        margin-left: -25px;
+    }
+
+    #button-wallet{
+        width: 130px;
+        margin-left: -25px;
+    }
+
+   #box-lg{
+    display: flex;
+    gap: 50px;
+    margin-left: 40px;
+
+    img{
+        display: none;
+    }
+    option{
+        border: none;
+    }
+    select{
+        border: none;
+        cursor: pointer;
+    }
+   
+    #select-lg{
+        margin-left: -34px;
+    }
+    }
+    .logo-with-name{
+        height: 60px;
+    }
+
+
+    #nav-bar{
+     display: flex;
+     align-items: center;
+     gap: 75px;
+     text-decoration: none;
+     margin-left:50px;
+    
+     a{
+        margin-left: -40px;
+        margin-right: 10px;
+         font-size: 12px;
+         color:#ADA3A3;
+         font-weight: bold;
+         position: relative;
+         &::after{
+             content: " ";
+             width: 0%;
+             height: 3px;
+             background: rgba(255, 51, 149, 1);
+             position: absolute;
+             bottom: -4px;
+             left: 50%;
+             transform: translateX(-50%);
+             transition: 0.5s ease-in-out;
+         }
+         &:hover::after{
+             width: 100%;
+         }
+     }
+    
+    }
+
+    #box-network{
+        margin-left: -40px;
+    }
+
+    #rpc-polygon{
+        width: 100px;
+        p{
+            margin-left: -10px;
+        }
+    }
+
+    #rpc{
+        width: 100px;
+        p{
+            margin-left: -10px;
+        }
+    }
+
+    #polygon-rede{
+        height: 25px;
+    }
+
+    #menu-nav{
+        margin-top: -15px;
+        margin-right: -50px;
+        width: 100px;
+        button{
+            font-size: 12px;
+            margin-top: 7px;
+        }
+
+        a{
+            font-size: 12px;
+            margin-top: -5px;
+        }
+    }
+}
+
+@media only screen and (min-width:1225px) and (max-width:1325px){
+    margin-left: 20px;
+    position: relative;
+
+    #button-conected{
+        width: 180px;
+        margin-left: -25px;
+    }
+
+    #button-wallet{
+        width: 130px;
+        margin-left: -25px;
+    }
+
+   #box-lg{
+    display: flex;
+    gap: 50px;
+    margin-left: 40px;
+
+    img{
+        display: none;
+    }
+    option{
+        border: none;
+    }
+    select{
+        border: none;
+        cursor: pointer;
+    }
+   
+    #select-lg{
+        margin-left: -34px;
+    }
+    }
+    .logo-with-name{
+        height: 60px;
+    }
+
+
+    #nav-bar{
+     display: flex;
+     align-items: center;
+     gap: 75px;
+     text-decoration: none;
+     margin-left:50px;
+    
+     a{
+        margin-left: -40px;
+        margin-right: 10px;
+         font-size: 12px;
+         color:#ADA3A3;
+         font-weight: bold;
+         position: relative;
+         &::after{
+             content: " ";
+             width: 0%;
+             height: 3px;
+             background: rgba(255, 51, 149, 1);
+             position: absolute;
+             bottom: -4px;
+             left: 50%;
+             transform: translateX(-50%);
+             transition: 0.5s ease-in-out;
+         }
+         &:hover::after{
+             width: 100%;
+         }
+     }
+    
+    }
+
+    #box-network{
+        margin-left: -40px;
+    }
+
+    #rpc-polygon{
+        width: 100px;
+        p{
+            margin-left: -10px;
+        }
+    }
+
+    #rpc{
+        width: 100px;
+        p{
+            margin-left: -10px;
+        }
+    }
+
+    #polygon-rede{
+        height: 25px;
+    }
+
+    #menu-nav{
+        margin-top: -15px;
+        margin-right: 35px;
+        width: 100px;
+        button{
+            font-size: 12px;
+            margin-top: 7px;
+        }
+
+        a{
+            font-size: 12px;
+            margin-top: -5px;
+        }
+    }
+}
+
+@media only screen and (min-width:1326px) and (max-width:1439px){
+    margin-left: 20px;
+    position: relative;
+
+    #button-conected{
+        width: 180px;
+        margin-left: -25px;
+    }
+
+    #button-wallet{
+        width: 130px;
+        margin-left: -25px;
+    }
+
+   #box-lg{
+    display: flex;
+    gap: 50px;
+    margin-left: 40px;
+
+    img{
+        display: none;
+    }
+    option{
+        border: none;
+    }
+    select{
+        border: none;
+        cursor: pointer;
+    }
+   
+    #select-lg{
+        margin-left: -34px;
+    }
+    }
+    .logo-with-name{
+        height: 70px;
+    }
+
+
+    #nav-bar{
+     display: flex;
+     align-items: center;
+     gap: 45px;
+     text-decoration: none;
+     margin-left:50px;
+    
+     a{
+        
+         
+         font-size: 14px;
+         color:#ADA3A3;
+         font-weight: bold;
+         position: relative;
+         &::after{
+             content: " ";
+             width: 0%;
+             height: 3px;
+             background: rgba(255, 51, 149, 1);
+             position: absolute;
+             bottom: -4px;
+             left: 50%;
+             transform: translateX(-50%);
+             transition: 0.5s ease-in-out;
+         }
+         &:hover::after{
+             width: 100%;
+         }
+     }
+    
+    }
+
+    #box-network{
+        margin-left: -40px;
+    }
+
+    #rpc-polygon{
+        width: 100px;
+        p{
+            margin-left: -10px;
+        }
+    }
+
+    #rpc{
+        width: 100px;
+        p{
+            margin-left: -10px;
+        }
+    }
+
+    #polygon-rede{
+        height: 25px;
+    }
+
+    #menu-nav{
+        margin-top: -15px;
+        width: 100px;
+        button{
+            font-size: 12px;
+            margin-top: 7px;
+        }
+
+        a{
+            font-size: 12px;
+            margin-top: -5px;
+        }
+    }
+}
+
+@media only screen and (min-width:1440px) and (max-width:1540px){
+    margin-left: 20px;
+    position: relative;
+
+    #button-conected{
+        width: 180px;
+        margin-left: -25px;
+    }
+
+    #button-wallet{
+        width: 130px;
+        margin-left: -25px;
+    }
+
+   #box-lg{
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+
+    option{
+        border: none;
+    }
+    select{
+        border: none;
+        cursor: pointer;
+    }
+   
+    #select-lg{
+        margin-left: 45px;
+    }
+    }
+    .logo-with-name{
+        height: 70px;
+    }
+
+
+    #nav-bar{
+     display: flex;
+     align-items: center;
+     gap: 70px;
+     text-decoration: none;
+     margin-left:20px;
+    
+     a{
+         
+         font-size: 13px;
+         color:#ADA3A3;
+         font-weight: bold;
+         position: relative;
+         &::after{
+             content: " ";
+             width: 0%;
+             height: 3px;
+             background: rgba(255, 51, 149, 1);
+             position: absolute;
+             bottom: -4px;
+             left: 50%;
+             transform: translateX(-50%);
+             transition: 0.5s ease-in-out;
+         }
+         &:hover::after{
+             width: 100%;
+         }
+     }
+    
+    }
+
+    #box-network{
+        margin-left: -40px;
+    }
+
+    #rpc-polygon{
+        width: 110px;
+        p{
+            margin-left: -10px;
+        }
+    }
+
+    #rpc{
+        width: 115px;
+        p{
+            margin-left: -5px;
+        }
+    }
+
+    #polygon-rede{
+        height: 25px;
+    }
+
+    #menu-nav{
+        margin-top: -15px;
+        width: 100px;
+        button{
+            font-size: 12px;
+            margin-top: 7px;
+        }
+
+        a{
+            font-size: 12px;
+            margin-top: -5px;
+        }
+    }
+}
+
+@media only screen and (min-width:1541px) and (max-width:1660px){
+    margin-left: 20px;
+    position: relative;
+
+    #button-conected{
+        width: 180px;
+        margin-left: -25px;
+    }
+
+    #button-wallet{
+        width: 130px;
+        margin-left: -25px;
+    }
+
+   #box-lg{
+    display: flex;
+    gap: 35px;
+    margin-left: 50px;
+
+    option{
+        border: none;
+    }
+    select{
+        border: none;
+        cursor: pointer;
+    }
+   
+    #select-lg{
+        margin-left: -34px;
+    }
+    }
+    .logo-with-name{
+        height: 70px;
+    }
+
+
+    #nav-bar{
+     display: flex;
+     align-items: center;
+     gap: 70px;
+     text-decoration: none;
+     margin-left:20px;
+    
+     a{
+         
+         font-size: 14px;
+         color:#ADA3A3;
+         font-weight: bold;
+         position: relative;
+         &::after{
+             content: " ";
+             width: 0%;
+             height: 3px;
+             background: rgba(255, 51, 149, 1);
+             position: absolute;
+             bottom: -4px;
+             left: 50%;
+             transform: translateX(-50%);
+             transition: 0.5s ease-in-out;
+         }
+         &:hover::after{
+             width: 100%;
+         }
+     }
+    
+    }
+
+    #box-network{
+        margin-left: -10px;
+    }
+
+    #rpc-polygon{
+        width: 110px;
+        p{
+            margin-left: -10px;
+        }
+    }
+
+    #rpc{
+        width: 115px;
+        p{
+            margin-left: -5px;
+        }
+    }
+
+    #polygon-rede{
+        height: 25px;
+    }
+
+    #menu-nav{
+        margin-top: -15px;
+        width: 100px;
+        button{
+            font-size: 12px;
+            margin-top: 7px;
+        }
+
+        a{
+            font-size: 12px;
+            margin-top: -5px;
+        }
+    }
+}
 `
 
 

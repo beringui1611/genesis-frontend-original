@@ -27,18 +27,26 @@ export default function Charts() {
 
   const options = {
     xaxis: {
-      type: '1m' as 'datetime'
+      type: '1m' as 'datetime',
     },
     colors: ['#FF3395'],
     chart: {
       toolbar: {
         show: false
       }
-    }
+    },
+    legend: {
+      labels: {
+        colors: '#ffff' 
+      }
+    },
+    tooltip: {
+      theme: 'dark' 
+    },    
   };
 
   return (
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <ReactApexChart options={options} series={series} type="line" height={350} />
     </div>
   );

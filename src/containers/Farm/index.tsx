@@ -124,32 +124,18 @@ export default function Farm() {
     fetchData();
   }, []);
   
-
-
+  
   return (
     <Container>
-      <Header />
+      <div id="disable"> <Header /></div>
+     
 
-      <h1 style={{
-        color: "#FF54A6",
-        fontSize: "40px",
-        marginLeft: "100px",
-        marginTop: "40px",
-      }}>GÊNESIS Farm</h1>
+      <h1 id="h1-genesis">GÊNESIS Farm</h1>
 
-      <p style={{
-        color: "#ffff",
-        fontSize: "20px",
-        marginLeft: "100px",
-        width: "800px",
-        marginBottom: "20px"
-      }}>This is where you put your PLG to render. Remembering that after placing your PLG to farm, you will only be able to withdraw your income in 30 days. </p>
+      <p id="paragraph-mkt">This is where you put your PLG to render. Remembering that after placing your PLG to farm, you will only be able to withdraw your income in 30 days. </p>
 
 
-      <Link style={{
-        color: "#FF54A6",
-        marginLeft: "100px",
-        fontSize: "20px"
+      <Link id="link" style={{
       }} to="/buy">Get PLG <img src={ArrowIcon} alt="arrow-icon" /></Link>
 
       <div id="container-grid">
@@ -189,7 +175,7 @@ export default function Farm() {
               cursor: "pointer"
             }} className="btn-choose"
               onClick={() => handleClickActive(3)}>
-              Withdraw Tokens</button>
+              Withdraw</button>
           </div>
 
           <hr id="line"></hr>
@@ -223,7 +209,6 @@ export default function Farm() {
                         <p id="usdt-value">
                           {
                             (valueMonth * 1 / 100).toFixed(valueMonth <= 0.1 ? 3 : 2)
-
                           }
                         </p>
                       </div>
@@ -400,7 +385,9 @@ export default function Farm() {
           </div>
         </div>
         <div id="grid-fuor" className="grids">
+          <div id="box-graphic">
           <Charts />
+          </div>
         </div>
       </div>
       <Footer />
