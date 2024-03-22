@@ -19,11 +19,11 @@ const rainbow = keyframes`
 
 
 export const Container = styled.div`
+
 background-color:rgba(41, 41, 41, 1);
-height: 365vh;
-max-width: 100vw;
-position: relative;
+height:450vh;
 overflow-x: hidden;
+overflow-y: hidden;
 
 #button-menu{
     @media only screen and (max-width: 320px){
@@ -481,7 +481,7 @@ border-radius: 43px ;
    }
 }
 
-@media only screen and (min-width:1012px) and (max-width:1400px){
+@media only screen and (min-width:1012px) and (max-width:1900px){
     .big-container-one{
         margin-left: 2%;
         margin-top: 10%;
@@ -504,7 +504,7 @@ export const ContainerTwo = styled.div`
     margin-top: 150px;
 
 
-    @media only screen and (min-width:1012px) and (max-width:1400px){
+    @media only screen and (min-width:1012px) and (max-width:1900px){
         margin-top:60%;
         margin-left:2%;
         #title-text{
@@ -573,7 +573,7 @@ export const ContainerTwo = styled.div`
         font-size: 28px;
     }
 
-    @media only screen and (min-width:1012px) and (max-width:1400px){
+    @media only screen and (min-width:1012px) and (max-width:1900px){
     .txt-column{
         font-size:120%;
     }
@@ -898,7 +898,7 @@ margin-left: -10px;
 @media only screen and (min-width:381px) and (max-width:402px){
     display: none;
 }
-@media only screen and (min-width:1012px) and (max-width:1400px){
+@media only screen and (min-width:1012px) and (max-width:1900px){
     display: none;
 }
 `
@@ -929,7 +929,7 @@ margin-left: -255px;
     display: none;
 }
 
-@media only screen and (min-width:1012px) and (max-width:1400px){
+@media only screen and (min-width:1012px) and (max-width:1900px){
     display: none;
 }
 `
@@ -1327,11 +1327,11 @@ export const ContainerThree = styled.div`
    }
 }
 
-@media only screen and (min-width:1012px) and (max-width:1180px){
-   margin-left:-22%;
-  .four-containers{
-    width:50%;
+@media only screen and (min-width:1000px) and (max-width:1900px){
+   margin-left:-10%;
    
+  .four-containers{
+    width:50%;   
   }
 
   .buttons-containers{
@@ -1360,14 +1360,14 @@ export const ContainerThree = styled.div`
   }
   .notification{
     width:150px;
-    left:57%;
+    left: 52%;
     bottom:800px;
   }
 
   .qr-code{
     width:160px;
     margin-top:190px;
-    margin-left:-11%;
+    margin-left:-9%;
   }
 
   #btn-join{

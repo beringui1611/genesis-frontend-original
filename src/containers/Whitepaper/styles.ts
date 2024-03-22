@@ -985,8 +985,8 @@ overflow-x:hidden;
 }
 
 @media only screen and (min-width:1440px) and (max-width:1540px){
-    height: 150vh;
-
+    height: 180vh;
+    overflow-y: hidden;
     .whitepaper-title{
     display: flex;
     justify-content: center;
@@ -1029,7 +1029,8 @@ overflow-x:hidden;
 
 }
 }
-@media only screen and (min-width:1541px) and (max-width:1660px){
-    height: 150vh;
+@media only screen and (min-width:1541px) and (max-width:1900px){
+    overflow-y: hidden;
+    height: 180vh;
 }
 `

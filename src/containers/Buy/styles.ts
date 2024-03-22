@@ -1043,8 +1043,8 @@ h2{
 }
 }
 
-@media only screen and (min-width:1440px) and (max-width:1441px){
-    height: 160vh;
+@media only screen and (min-width:1440px) and (max-width:1900px){
+    height: 185vh;
 
     .buy-containers{        
        #btn-wallet{
@@ -1099,12 +1099,5 @@ h2{
 }
 }
 
-@media only screen and (min-width:1442px) and (max-width:1900px) {
-    height:165vh;
-    overflow-y:hidden;
-    .div-coins{
-        margin-left:990px;
-        gap:180px;
-    }
-}
+
 `

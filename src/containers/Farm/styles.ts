@@ -1457,5 +1457,10 @@ export const Container = styled.div`
 
 }
 
-  
+@media only screen and (min-width:1442px) and (max-width:1900px) {
+  overflow-y: hidden;
+  #container-grid{
+    margin-left: 10%;
+  }
+}  
 `
