@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
 background-color: rgba(41, 41, 41, 1);
 height: 130vh;
-max-width: 100vw;
 overflow-x:hidden;
 
 
@@ -12,10 +11,8 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
-
         img{
             height: 17px;
         }
@@ -25,7 +22,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -38,7 +34,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -51,7 +46,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -64,7 +58,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -77,7 +70,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -90,7 +82,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -103,7 +94,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -116,7 +106,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -129,7 +118,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -142,7 +130,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -155,7 +142,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -168,7 +154,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -181,7 +166,6 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
-        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -238,7 +222,7 @@ overflow-x:hidden;
 }
 
 @media only screen and (max-width: 320px){
-    height: 200vh;
+    height: 350vh;
     .containers-pdf{
         overflow-y:hidden;
     display: flex;
@@ -275,7 +259,7 @@ overflow-x:hidden;
 }
 
 @media only screen and (min-width:321px) and (max-width:340px){
-    height: 200vh;
+    height: 300vh;
     .containers-pdf{
         overflow-y:hidden;
     display: flex;
@@ -312,7 +296,7 @@ overflow-x:hidden;
 }
 
 @media only screen and (min-width:341px) and (max-width:380px){
-    height: 200vh;
+    height: 250vh;
     .containers-pdf{
         overflow-y:hidden;
     display: flex;
@@ -349,7 +333,7 @@ overflow-x:hidden;
 }
 
 @media only screen and (min-width:381px) and (max-width:402px){
-    height: 200vh;
+    height: 250vh;
     .containers-pdf{
         overflow-y:hidden;
     display: flex;
@@ -386,7 +370,7 @@ overflow-x:hidden;
 }
 
 @media only screen and (min-width:403px) and (max-width:430px){
-    height: 200vh;
+    height: 220vh;
     .containers-pdf{
         overflow-y:hidden;
     display: flex;
