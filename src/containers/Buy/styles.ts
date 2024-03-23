@@ -234,7 +234,7 @@ h2{
 }
 
 @media only screen and (min-width:320px) and (max-width:374px) {
-    height: 200vh;
+    height: 160vh;
 
      .buy-title{
         margin-left: 10px;
@@ -352,7 +352,7 @@ h2{
 }
 
 @media only screen and (min-width:375px) and (max-width:425px){
-    height: 200vh;
+    height: 160vh;
 
      .buy-title{
         margin-left: 10px;
@@ -468,7 +468,7 @@ h2{
 }
 
 @media only screen and (min-width:426px) and (max-width:767px){
-    height: 200vh;
+    height: 160vh;
 
 .buy-title{
    margin-left: 10px;
