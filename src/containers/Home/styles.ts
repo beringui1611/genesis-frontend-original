@@ -21,7 +21,7 @@ const rainbow = keyframes`
 export const Container = styled.div`
 
 background-color:rgba(41, 41, 41, 1);
-height:450vh;
+height:400vh;
 overflow-x: hidden;
 overflow-y: hidden;
 
@@ -164,7 +164,7 @@ border-radius: 43px ;
 }
 
 @media only screen and (max-width: 320px){
-    height: 300vh;
+    height: 560vh;
 
     
 
@@ -230,7 +230,8 @@ border-radius: 43px ;
 }
 
 @media only screen and (min-width:321px) and (max-width:340px){
-    height: 300vh;
+    height: 560vh;
+
 
     .big-container-one{
         margin-left: 9.5%;
@@ -293,7 +294,7 @@ border-radius: 43px ;
 }
 
 @media only screen and (min-width:341px) and (max-width:380px){
-    height: 300vh;
+    height: 390vh;
 
     .big-container-one{
         margin-left: 9.5%;
@@ -356,7 +357,7 @@ border-radius: 43px ;
 }
 
 @media only screen and (min-width:403px) and (max-width:430px){
-    height: 300vh;
+    height: 350vh;
 
     .big-container-one{
         margin-left: 9.5%;
