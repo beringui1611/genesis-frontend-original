@@ -12,6 +12,9 @@ import UsdtIcon from '../../assets/Farm-assets/usdt.png'
 import Modal from "../../components/Modal";
 import { toast } from "react-toastify";
 import Charts from "../../components/Charts";
+import CellMenu from "../../components/Cell-Menu";
+import ThreeLines from "../../assets/Media-assets/three-lines.svg"
+import CloseLines from "../../assets/Media-assets/close-lines.svg"
 
 export default function Farm() {
   const [isActive, setIsActive] = useState<number>(1);
@@ -21,6 +24,7 @@ export default function Farm() {
   const [inputValue, setInputValue] = useState('');
   const [usdt, setUsdt] = useState<any>(0);
   const [farming, setFarming] = useState<any>(0);
+  const [menuMobile, setCloseMenuMobile] = useState(false);
 
 
   async function handleClickYieldFarming() {
@@ -123,10 +127,17 @@ export default function Farm() {
   
     fetchData();
   }, []);
+
+
+  function closeMenuMobile(){
+    setCloseMenuMobile(!menuMobile)
+  }
   
   
   return (
     <Container>
+      <button onClick={closeMenuMobile} id="button-menu"><img src={menuMobile ? CloseLines : ThreeLines} alt="open-menu" /></button>
+      { menuMobile && <CellMenu/>}
       <div id="disable"> <Header /></div>
      
 

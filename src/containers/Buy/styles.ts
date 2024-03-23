@@ -234,7 +234,7 @@ h2{
 }
 
 @media only screen and (min-width:320px) and (max-width:374px) {
-    height: 130vh;
+    height: 200vh;
 
      .buy-title{
         margin-left: 10px;
@@ -352,7 +352,7 @@ h2{
 }
 
 @media only screen and (min-width:375px) and (max-width:425px){
-    height: 130vh;
+    height: 200vh;
 
      .buy-title{
         margin-left: 10px;
@@ -468,7 +468,7 @@ h2{
 }
 
 @media only screen and (min-width:426px) and (max-width:767px){
-    height: 130vh;
+    height: 200vh;
 
 .buy-title{
    margin-left: 10px;
@@ -584,7 +584,7 @@ h2{
 }
 
 @media only screen and (min-width:768px) and (max-width:1023px){
-    height: 130vh;
+    height: 150vh;
 
 .buy-title{
    margin-left: 20px;
@@ -929,7 +929,7 @@ h2{
 }
 
 @media only screen and (min-width:1301px) and (max-width:1439px){
-    height: 150vh;
+    height: 180vh;
 
 .buy-title{
    margin-left: 40px;
@@ -980,7 +980,7 @@ h2{
 
    .itens-buy-container{
     width: 600px;
-    height: 180px;
+    height: 200px;
 
     h2{
         margin-top: 25px;
@@ -1044,7 +1044,7 @@ h2{
 }
 
 @media only screen and (min-width:1440px) and (max-width:1900px){
-    height: 185vh;
+    height: 205vh;
 
     .buy-containers{        
        #btn-wallet{

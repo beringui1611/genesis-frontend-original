@@ -5,6 +5,17 @@ export const Container = styled.div`
   height: 160vh;
   position:relative;
   overflow-x:hidden;
+
+  @media only screen and (min-width:100px) and (max-width:500px) {
+    #button-menu{
+      background-color:transparent;
+      border: none;
+      position: absolute;
+      z-index:100;
+      margin-left:10px;
+      margin-top:10px;
+    }
+  }
   textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
@@ -418,7 +429,7 @@ export const Container = styled.div`
 
 
  @media only screen and (max-width:320px) {
-  height:200vh;
+  height:220vh;
   overflow-x: hidden;
   
   #h1-genesis{
@@ -621,7 +632,7 @@ export const Container = styled.div`
 }
 
 @media only screen and (min-width:321px) and (max-width:340px) {
-  height:200vh;
+  height:220vh;
   overflow-x: hidden;
   
   #h1-genesis{
@@ -824,7 +835,7 @@ export const Container = styled.div`
 }
 
 @media only screen and (min-width:341px) and (max-width:380px) {
-  height:200vh;
+  height:220vh;
   overflow-x: hidden;
   
   #h1-genesis{
@@ -1032,7 +1043,7 @@ export const Container = styled.div`
 }
 
 @media only screen and (min-width:403px) and (max-width:430px) {
-  height:200vh;
+  height:220vh;
   overflow-x: hidden;
   
   #h1-genesis{
@@ -1462,5 +1473,6 @@ export const Container = styled.div`
   #container-grid{
     margin-left: 10%;
   }
-}  
+
+}
 `
