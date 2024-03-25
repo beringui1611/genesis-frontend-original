@@ -490,7 +490,7 @@ border-radius: 43px ;
 }
 
 @media only screen and (min-width:381px) and (max-width:402px){
-    height: 430vh;
+    height: 380vh;
 
     .big-container-one{
         margin-left: 9.5%;
@@ -542,7 +542,7 @@ border-radius: 43px ;
     margin-top: 13%;
     gap: 80px;
 
-    h1{
+    #text-big-two{
      width:19rem;
      font-size: 18px;
      text-align: center;
@@ -552,7 +552,7 @@ border-radius: 43px ;
      font-weight: 300;
      span{
        font-size:18px ;
-       font-weight: 500;
+       font-weight: 700;
      }
     }
    }
