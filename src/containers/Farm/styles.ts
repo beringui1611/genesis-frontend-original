@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: #292929;
   height: 160vh;
-  position:relative;
   overflow-x:hidden;
 
   @media only screen and (min-width:100px) and (max-width:500px) {
@@ -429,7 +428,7 @@ export const Container = styled.div`
 
 
  @media only screen and (max-width:320px) {
-  height:220vh;
+  height:360vh;
   overflow-x: hidden;
   
   #h1-genesis{
@@ -632,7 +631,7 @@ export const Container = styled.div`
 }
 
 @media only screen and (min-width:321px) and (max-width:340px) {
-  height:220vh;
+  height:260vh;
   overflow-x: hidden;
   
   #h1-genesis{
@@ -835,7 +834,7 @@ export const Container = styled.div`
 }
 
 @media only screen and (min-width:341px) and (max-width:380px) {
-  height:220vh;
+  height:250vh;
   overflow-x: hidden;
   
   #h1-genesis{
