@@ -445,7 +445,7 @@ border-radius: 43px ;
 }
 
 @media only screen and (min-width:381px) and (max-width:402px){
-    height: 390vh;
+    height: 410vh;
 
     .big-container-one{
         margin-left: 9.5%;
@@ -1122,6 +1122,7 @@ export const ContainerThree = styled.div`
         
         h1{
             margin-left: -75px;
+            font-size:20px;
         }
     }
    }
@@ -1177,6 +1178,7 @@ export const ContainerThree = styled.div`
         
         h1{
             margin-left: -75px;
+            font-size:20px;
         }
     }
    }
@@ -1234,6 +1236,7 @@ export const ContainerThree = styled.div`
         
         h1{
             margin-left: -75px;
+            font-size:20px;
         }
     }
    }
@@ -1291,6 +1294,7 @@ export const ContainerThree = styled.div`
         
         h1{
             margin-left: -75px;
+            font-size:20px;
         }
     }
    }
@@ -1348,6 +1352,8 @@ export const ContainerThree = styled.div`
         
         h1{
             margin-left: -75px;
+            font-size:20px;
+
         }
      }
    }
