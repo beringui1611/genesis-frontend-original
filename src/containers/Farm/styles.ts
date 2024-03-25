@@ -13,6 +13,9 @@ export const Container = styled.div`
       z-index:100;
       margin-left:10px;
       margin-top:10px;
+      img{
+            height: 17px;
+        }
     }
   }
   textarea:focus, input:focus, select:focus {

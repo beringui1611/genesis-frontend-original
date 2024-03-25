@@ -218,7 +218,7 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         z-index:99;
-        margin-top:450px;
+        margin-top:400px;
         gap:10px;
     }
 
@@ -309,7 +309,7 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         z-index:99;
-        margin-top:520px;
+        margin-top:480px;
         gap:10px;
     }
 

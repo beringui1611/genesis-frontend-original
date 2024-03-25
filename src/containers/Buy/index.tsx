@@ -10,11 +10,19 @@ import { Container } from "./styles";
 import { buy } from "../../service/Web3Service";
 import { toast } from "react-toastify";
 import Modal from "../../components/Modal";
+import CellMenu from "../../components/Cell-Menu";
+import ThreeLines from "../../assets/Media-assets/three-lines.svg"
+import CloseLines from "../../assets/Media-assets/close-lines.svg"
 
 function Buy() {
 
   const [value, setValue] = useState<number>(0);
   const [modal, setModal] = useState<boolean>(false);
+  const [menu, setMenu] = useState(false)
+
+  function handleButton(){
+    setMenu(!menu)
+  }
 
   function swap (event: React.ChangeEvent<HTMLInputElement>){
     setValue(parseFloat(event.target.value));
@@ -52,6 +60,10 @@ function Buy() {
   return (
     <Container>
       <Header />
+
+      <button onClick={handleButton} id="button-menu-buy"><img src={menu ? CloseLines : ThreeLines} alt="open-menu" /></button>
+      { menu && <CellMenu/>}
+
       <div className="buy-title">
         <h1>Buy GÊNESIS</h1>
         <p>

@@ -1367,7 +1367,7 @@ export const ContainerThree = styled.div`
 
   .qr-code{
     width:160px;
-    margin-top:200px;
+    margin-top:190px;
     margin-left:-11%;
   }
 
