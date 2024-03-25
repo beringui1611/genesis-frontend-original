@@ -31,9 +31,9 @@ function CellMenu() {
                         <p id="address">
                             {
                                 localStorage.getItem("wallet") ?
-                                <p>{JSON.parse(`${localStorage.getItem("wallet")}`)}</p>
+                                (<p>{JSON.parse(`${localStorage.getItem("wallet")}`)}</p>)
                                 :
-                                <button onClick={openModal} id="cnt-wallet">connect wallet</button>
+                                (<button onClick={openModal} id="cnt-wallet">connect wallet</button>)
                             }
                         </p>
                         {
