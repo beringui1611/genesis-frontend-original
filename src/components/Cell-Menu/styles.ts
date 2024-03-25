@@ -400,7 +400,7 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         z-index:99;
-        margin-top:270px;
+        margin-top:580px;
         gap:10px;
     }
 
