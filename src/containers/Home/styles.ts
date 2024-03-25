@@ -1329,7 +1329,7 @@ export const ContainerThree = styled.div`
 }
 
 @media only screen and (min-width:1000px) and (max-width:1900px){
-   margin-left:-10%;
+   margin-left:-20%;
    
   .four-containers{
     width:50%;   
@@ -1351,7 +1351,7 @@ export const ContainerThree = styled.div`
   }
 
   .container-phone{
-  margin-left:55%;
+  margin-left:52%;
   }
 
   #cellphone{
@@ -1361,14 +1361,14 @@ export const ContainerThree = styled.div`
   }
   .notification{
     width:150px;
-    left: 52%;
+    left: 64%;
     bottom:800px;
   }
 
   .qr-code{
     width:160px;
-    margin-top:190px;
-    margin-left:-9%;
+    margin-top:200px;
+    margin-left:-11%;
   }
 
   #btn-join{
