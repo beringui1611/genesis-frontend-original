@@ -9,7 +9,7 @@ export const Container = styled.div`
     #button-menu{
       background-color:transparent;
       border: none;
-      position: absolute;
+      position: fixed;
       z-index:100;
       margin-left:10px;
       margin-top:10px;
@@ -1044,7 +1044,7 @@ export const Container = styled.div`
 }
 
 @media only screen and (min-width:403px) and (max-width:430px) {
-  height: 390vh;
+  height: 300vh;
   overflow-x: hidden;
   
   #h1-genesis{

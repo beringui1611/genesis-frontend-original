@@ -11,8 +11,10 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
+        position: fixed;
         margin-top:30px;
         margin-left: 20px;
+
         img{
             height: 17px;
         }
@@ -22,6 +24,7 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
+        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -34,6 +37,7 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
+        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -46,6 +50,7 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
+        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -58,6 +63,7 @@ overflow-x:hidden;
         background: transparent;
         border: none;
         z-index: 99;
+        position: fixed;
         margin-top:30px;
         margin-left: 20px;
 
@@ -66,115 +72,8 @@ overflow-x:hidden;
         }
     }
 
-    @media only screen and (min-width:431px) and (max-width:470px){
-        background: transparent;
-        border: none;
-        z-index: 99;
-        margin-top:30px;
-        margin-left: 20px;
 
-        img{
-            height: 21px;
-        }
-    }
-
-    @media only screen and (min-width:471px) and (max-width:509px){
-        background: transparent;
-        border: none;
-        z-index: 99;
-        margin-top:30px;
-        margin-left: 20px;
-
-        img{
-            height: 21px;
-        } 
-    }
-
-    @media only screen and (min-width:510px) and (max-width:550px){
-        background: transparent;
-        border: none;
-        z-index: 99;
-        margin-top:30px;
-        margin-left: 20px;
-
-        img{
-            height: 21px;
-        }
-    }
-
-    @media only screen and (min-width:551px) and (max-width:600px){
-        background: transparent;
-        border: none;
-        z-index: 99;
-        margin-top:30px;
-        margin-left: 20px;
-
-        img{
-            height: 21px;
-        }
-    }
-
-    @media only screen and (min-width:601px) and (max-width:651px){
-        background: transparent;
-        border: none;
-        z-index: 99;
-        margin-top:30px;
-        margin-left: 20px;
-
-        img{
-            height: 21px;
-        }
-    }
-
-    @media only screen and (min-width:652px) and (max-width:700px){
-        background: transparent;
-        border: none;
-        z-index: 99;
-        margin-top:30px;
-        margin-left: 20px;
-
-        img{
-            height: 21px;
-        }
-    }
-
-    @media only screen and (min-width:701px) and (max-width:767px){
-        background: transparent;
-        border: none;
-        z-index: 99;
-        margin-top:30px;
-        margin-left: 20px;
-
-        img{
-            height: 21px;
-        }
-    }
-
-    @media only screen and (min-width:768px) and (max-width:868px) {
-        background: transparent;
-        border: none;
-        z-index: 99;
-        margin-top:30px;
-        margin-left: 20px;
-
-        img{
-            height: 21px;
-        }
-    }
-
-    @media only screen and (min-width:869px) and (max-width:969px){
-        background: transparent;
-        border: none;
-        z-index: 99;
-        margin-top:30px;
-        margin-left: 20px;
-
-        img{
-            height: 21px;
-        }
-    }
-
-    @media only screen and (min-width:970px){
+    @media only screen and (min-width: 768px) {
         display: none;
     }
 }
