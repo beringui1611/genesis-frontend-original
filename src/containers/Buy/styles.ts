@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 background-color: rgba(41, 41, 41, 1);
-height: 130vh;
+height: 160vh;
 max-width: 100vw;
 overflow-x:hidden;
 
