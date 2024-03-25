@@ -194,12 +194,12 @@ border-radius: 43px ;
 
     h1{
      width:570px;
-     font-size: 28px;
+     font-size: 18px;
      margin-top: 55px;
      color: rgba(255, 255, 255, 1);
      font-weight: 300;
      span{
-       font-size:42px ;
+       font-size:18px ;
        font-weight: 500;
      }
     }
@@ -490,7 +490,7 @@ border-radius: 43px ;
 }
 
 @media only screen and (min-width:381px) and (max-width:402px){
-    height: 410vh;
+    height: 430vh;
 
     .big-container-one{
         margin-left: 9.5%;
@@ -551,7 +551,7 @@ border-radius: 43px ;
      color: rgba(255, 255, 255, 1);
      font-weight: 300;
      span{
-       font-size:34px ;
+       font-size:18px ;
        font-weight: 500;
      }
     }
