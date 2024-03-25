@@ -69,7 +69,7 @@ function Buy() {
         </button>
         <div className="itens-buy-container">
           <h2>For</h2>
-          <p id="value-usdt-amount">{value ? (value * 10).toFixed(2) : "0"}</p>
+          <p id="value-usdt-amount">{value ? (value * 1).toFixed(2) : "0"}</p>
         </div>
         {
           !localStorage.getItem('wallet') ?
@@ -93,7 +93,7 @@ function Buy() {
         </div>
         <div>
           <img className="img-plg" src={Blocks} alt={"test"} />
-          <h3>PLG</h3>
+          <h3>GNS</h3>
         </div>
        
       </div>

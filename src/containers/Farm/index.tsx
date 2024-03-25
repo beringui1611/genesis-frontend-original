@@ -197,7 +197,7 @@ export default function Farm() {
                 (
                   <div id="active-1">
                     <p id="farm-paragraph">Farm</p>
-                    <p id="farm-value">1 PLG ($0.10) = $0.001 USDT a month.</p>
+                    <p id="farm-value">1 PLG ($1) = $0.001 USDT a month.</p>
                     <div id="box-farm-one">
                       <div id="box-value">
                         <input onChange={handleChangeValueFarming} id="input-value" value={inputValue} placeholder="0.0" type="number" min="0" maxLength={9} />
@@ -261,7 +261,7 @@ export default function Farm() {
                 (
                   <div id="active-1">
                     <p id="farm-paragraph">Reward</p>
-                    <p id="farm-value">1 PLG ($0.10) = $0.001 USDT a month.</p>
+                    <p id="farm-value">1 PLG ($1) = $0.001 USDT a month.</p>
                     <div id="box-farm-one">
                       <div id="box-value">
                         <input  id="input-value" value={farming} placeholder="0.0" type="number" min="0" disabled />
@@ -326,7 +326,7 @@ export default function Farm() {
                 (
                   <div id="active-1">
                     <p id="farm-paragraph">Withdraw</p>
-                    <p id="farm-value">1 PLG ($0.10) = $0.001 USDT a month.</p>
+                    <p id="farm-value">1 PLG ($1) = $0.001 USDT a month.</p>
                     <div id="box-farm-one">
                       <div id="box-value">
                         <input onChange={handleChangeValueFarming} id="input-value" value={inputValue} placeholder="0.0" type="number" min="0" maxLength={9} />
@@ -390,7 +390,7 @@ export default function Farm() {
                 <p id="usdt-amount"><img src={UsdtIcon} alt="usdt-icon" />USDT</p>
               </div>
               <div className="container-amount">
-                <p className="amount" id="dolar-amount">${(balance * 0.10).toFixed(2)}</p>
+                <p className="amount" id="dolar-amount">${(balance * 1).toFixed(2)}</p>
               </div>
             </div>
           </div>

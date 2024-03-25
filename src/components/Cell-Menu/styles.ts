@@ -4,10 +4,8 @@ import styled from "styled-components"
 export const Container = styled.div`
 @media only screen and (max-width: 320px){
 
-
-    
-
     #container-menu{
+        height:121vh;
      position: fixed;
      display: flex;
      flex-direction: column;
@@ -32,6 +30,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:270px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 
 @media only screen and (min-width:321px) and (max-width:340px){
@@ -60,6 +121,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:300px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 
 @media only screen and (min-width:341px) and (max-width:380px){
@@ -88,6 +212,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:450px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 
 @media only screen and (min-width:403px) and (max-width:430px){
@@ -116,6 +303,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:520px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 
 @media only screen and (min-width:381px) and (max-width:402px){
@@ -144,6 +394,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:270px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 @media only screen and (min-width:431px) and (max-width:470px){
     #container-menu{
@@ -171,6 +484,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:270px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 
 @media only screen and (min-width:471px) and (max-width:509px){
@@ -199,6 +575,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:270px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 
 @media only screen and (min-width:510px) and (max-width:550px){
@@ -227,6 +666,71 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:270px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
+    
+
 }
 
 @media only screen and (min-width:551px) and (max-width:600px){
@@ -255,6 +759,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:270px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 
 @media only screen and (min-width:601px) and (max-width:651px){
@@ -283,6 +850,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:270px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 
 @media only screen and (min-width:652px) and (max-width:700px){
@@ -311,6 +941,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:270px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 
 @media only screen and (min-width:701px) and (max-width:767px){
@@ -339,6 +1032,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:270px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 
 @media only screen and (min-width:768px) and (max-width:868px){
@@ -367,6 +1123,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:270px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 
 @media only screen and (min-width:869px) and (max-width:969px){
@@ -395,6 +1214,69 @@ export const Container = styled.div`
         margin-top: 100px;
         z-index: 97;
     }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:270px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
 }
 
 @media only screen and (min-width:970px){

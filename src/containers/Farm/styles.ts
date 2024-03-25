@@ -1044,7 +1044,7 @@ export const Container = styled.div`
 }
 
 @media only screen and (min-width:403px) and (max-width:430px) {
-  height: 280vh;
+  height: 250vh;
   overflow-x: hidden;
   
   #h1-genesis{
