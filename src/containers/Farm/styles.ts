@@ -1474,6 +1474,14 @@ export const Container = styled.div`
   #container-grid{
     margin-left: 10%;
   }
+  #button-menu{
+    display: none;
+  }
+}
 
+@media only screen and (min-width:431px){
+  #button-menu{
+    display: none;
+  }
 }
 `

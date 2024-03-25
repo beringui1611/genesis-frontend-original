@@ -357,7 +357,7 @@ border-radius: 43px ;
 }
 
 @media only screen and (min-width:403px) and (max-width:430px){
-    height: 350vh;
+    height: 390vh;
 
     .big-container-one{
         margin-left: 9.5%;
