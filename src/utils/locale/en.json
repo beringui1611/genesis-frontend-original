@@ -9,6 +9,17 @@
             "connect": "Connect Wallet",
             "desconnect": "Disconnect",
             "viewExplorer": "View Explorer"
+        },
+        
+        "home": {
+            "buyNowTwo": "Buy Now!",
+            "welcome": "Welcome to GCoin, a revolutionary digital token that is changing the way the world invests and participates in the crypto asset universe.",
+            "why": "Why Choose GCoin?",
+            "evolution": "In the ever-evolving world of cryptocurrencies, GCoin stands out as a unique investment choice, offering a range of advantages that set it apart from other options available in the market. Here are some reasons why investing in GCoin might be the best decision you'll make:",
+            "unlock": "Unlocking New Opportunities: GCoin and the Future of Cryptocurrencies:",
+            "waitOne": "While some cryptocurrencies struggle to offer a clear and sustainable value proposition, GCoin stands out as a comprehensive and innovative solution. Here's how we can compare the current market with what we can achieve with GCoin:",
+            "waitTwo": "As the cryptocurrency market continues to grow and evolve rapidly, many investors face challenges and limitations when seeking significant investment opportunities. This is where GCoin comes in - a new approach to investing and participating in the exciting world of cryptocurrencies.",
+            "joinNow": "JOIN NOW!"
         }
     }
 }

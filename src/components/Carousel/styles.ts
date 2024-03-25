@@ -28,12 +28,12 @@ export const Container = styled.div`
 
    .swiper-button-prev{
      color:rgba(255, 51, 149, 1) ;
-     margin-top: -16%;
+     margin-top: -30%;
    }
  
    .swiper-button-next{
      color:rgba(255, 51, 149, 1) ;
-     margin-top: -16%;
+     margin-top: -30%;
    }
 }
 
@@ -63,12 +63,12 @@ export const Container = styled.div`
 
    .swiper-button-prev{
      color:rgba(255, 51, 149, 1) ;
-     margin-top: -16%;
+     margin-top: -30%;
    }
  
    .swiper-button-next{
      color:rgba(255, 51, 149, 1) ;
-     margin-top: -16%;
+     margin-top: -30%;
    }
 }
 
@@ -98,12 +98,12 @@ export const Container = styled.div`
 
    .swiper-button-prev{
      color:rgba(255, 51, 149, 1) ;
-     margin-top: -16%;
+     margin-top: -24%;
    }
  
    .swiper-button-next{
      color:rgba(255, 51, 149, 1) ;
-     margin-top: -16%;
+     margin-top: -24%;
    }
 }
 
@@ -133,12 +133,12 @@ export const Container = styled.div`
 
    .swiper-button-prev{
      color:rgba(255, 51, 149, 1) ;
-     margin-top: -16%;
+     margin-top: -20%;
    }
  
    .swiper-button-next{
      color:rgba(255, 51, 149, 1) ;
-     margin-top: -16%;
+     margin-top: -20%;
    }
 }
 
@@ -168,12 +168,12 @@ export const Container = styled.div`
 
    .swiper-button-prev{
      color:rgba(255, 51, 149, 1) ;
-     margin-top: -16%;
+     margin-top: -30%;
    }
  
    .swiper-button-next{
      color:rgba(255, 51, 149, 1) ;
-     margin-top: -16%;
+     margin-top: -30%;
    }
 }
 `

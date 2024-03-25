@@ -67,7 +67,7 @@ function Buy() {
       <div className="buy-title">
         <h1>Buy GÊNESIS</h1>
         <p>
-          This is where you convert your USDT to Plural Genesis. Once the conversion is done, just start farming!
+          This is where you convert your USDT to Gênesis Coin. Once the conversion is done, just start farming!
         </p>
         <Link to="/farm">Get Farming <img src={ArrowRight} alt="arror-right" /></Link>
       </div>

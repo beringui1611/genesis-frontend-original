@@ -25,6 +25,28 @@ height:400vh;
 overflow-x: hidden;
 overflow-y: hidden;
 
+#text-big-two{
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1439px) and (max-width: 1441px){
+    #text-big-two{
+    font-size: 24px;
+    margin-top: 70px;
+    margin-bottom: 10px;    
+    }
+
+    .title{
+        margin-left: 35px;
+        #title-text{
+            font-size: 30px;
+            width: 1200px;
+        }
+    }
+}
+
 #button-menu{
     @media only screen and (max-width: 320px){
         background: transparent;
@@ -174,8 +196,9 @@ border-radius: 43px ;
     }
 
     .container-one{
-        width: 16.2rem;
+        width: 20.2rem;
         height: 10rem;
+        border-radius:15px;
 
         h1{
             margin-top: 12%;
@@ -191,9 +214,10 @@ border-radius: 43px ;
         }
 
         h2{
-            width: 10rem;
-            font-size: 14px;
-            margin-left: 10%;
+            width: 16rem;
+            font-size: 13px;
+            margin-left: 7%;
+            
         }
     }
 
@@ -212,17 +236,17 @@ border-radius: 43px ;
     margin-top: 13%;
     gap: 80px;
 
-    h1{
-     width:19rem;
-     font-size: 18px;
+    #text-big-two{
+     width:300px;
      text-align: center;
+     font-size: 15px;
      margin-left: -7%;
      margin-top: -14%;
      color: rgba(255, 255, 255, 1);
      font-weight: 300;
      span{
-       font-size:34px ;
-       font-weight: 500;
+       font-size:15px ;
+       font-weight: 700;
      }
     }
    }
@@ -277,7 +301,7 @@ border-radius: 43px ;
     margin-top: 13%;
     gap: 80px;
 
-    h1{
+    #text-big-two{
      width:19rem;
      font-size: 18px;
      text-align: center;
@@ -286,7 +310,7 @@ border-radius: 43px ;
      color: rgba(255, 255, 255, 1);
      font-weight: 300;
      span{
-       font-size:34px ;
+       font-size:18px ;
        font-weight: 500;
      }
     }
@@ -297,14 +321,14 @@ border-radius: 43px ;
     height: 400vh;
 
     .big-container-one{
-        margin-left: 9.5%;
+        margin-left: 2.5%;
         margin-top: 27%;
     }
 
     .container-one{
-        width: 17.2rem;
+        width: 22.2rem;
         height: 11rem;
-
+        border-radius:20px;
         h1{
             margin-top: 13%;
             font-size: 22px;
@@ -319,9 +343,9 @@ border-radius: 43px ;
         }
 
         h2{
-            width: 14rem;
+            width: 18rem;
             font-size: 14px;
-            margin-left: 9%;
+            margin-left: 4%;
         }
     }
 
@@ -340,7 +364,7 @@ border-radius: 43px ;
     margin-top: 13%;
     gap: 80px;
 
-    h1{
+    #text-big-two{
      width:19rem;
      font-size: 18px;
      text-align: center;
@@ -349,8 +373,8 @@ border-radius: 43px ;
      color: rgba(255, 255, 255, 1);
      font-weight: 300;
      span{
-       font-size:34px ;
-       font-weight: 500;
+       font-size:18px ;
+       font-weight: 700;
      }
     }
    }
@@ -360,16 +384,17 @@ border-radius: 43px ;
     height: 390vh;
 
     .big-container-one{
-        margin-left: 9.5%;
+        margin-left: 1.5%;
         margin-top: 27%;
     }
 
     .container-one{
-        width: 20.2rem;
+        border-radius: 25px;
+        width: 25.2rem;
         height: 12rem;
 
         h1{
-            margin-top: 16%;
+            margin-top: 10%;
             font-size: 24px;
 
             a{
@@ -382,9 +407,9 @@ border-radius: 43px ;
         }
 
         h2{
-            width: 15rem;
+            width: 20rem;
             font-size: 16px;
-            margin-left:10.5%;
+            margin-left:6.5%;
         }
     }
 
@@ -403,7 +428,7 @@ border-radius: 43px ;
     margin-top: 13%;
     gap: 80px;
 
-    h1{
+    #text-big-two{
      width:19rem;
      font-size: 18px;
      text-align: center;
@@ -412,8 +437,8 @@ border-radius: 43px ;
      color: rgba(255, 255, 255, 1);
      font-weight: 300;
      span{
-       font-size:34px ;
-       font-weight: 500;
+       font-size:18px ;
+       font-weight: 700;
      }
     }
    }
@@ -1378,5 +1403,57 @@ export const ContainerThree = styled.div`
     height:20px;
   }
 }
+
+@media only screen and (min-width: 1439px) and (max-width: 1460px){
+    margin-left:-10%;
+   
+  .four-containers{
+    width:50%;   
+  }
+
+  .buttons-containers{
+    width:50%;
+    font-size:100%;
+    display:flex;
+    align-items: center;
+    margin-bottom:200px;
+    button{
+        width:60%;
+        height:80px;
+        h1{
+            margin-left:-7%;
+        }
+    }
+  }
+
+  .container-phone{
+  margin-left:52%;
+  }
+
+  #cellphone{
+    height:35rem;
+   margin-top:-50px;
+   
+  }
+  .notification{
+    width:190px;
+    left: 47.5%;
+    bottom:790px;
+  }
+
+  .qr-code{
+    width:160px;
+    margin-top:190px;
+    margin-left:-13.5%;
+  }
+
+  #btn-join{
+    margin-left:80px;
+    margin-top:20px;
+    width:120px;
+    height:20px;
+  }
+}
+
 
 `

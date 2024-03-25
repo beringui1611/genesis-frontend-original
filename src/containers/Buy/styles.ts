@@ -9,6 +9,78 @@ height: 160vh;
 max-width: 100vw;
 overflow-x:hidden;
 
+#button-menu-buy{
+    @media only screen and (max-width: 320px){
+        background: transparent;
+        border: none;
+        z-index: 99;
+        position: fixed;
+        margin-top:30px;
+        margin-left: 20px;
+
+        img{
+            height: 17px;
+        }
+    }
+
+    @media only screen and (min-width:321px) and (max-width:340px){
+        background: transparent;
+        border: none;
+        z-index: 99;
+        position: fixed;
+        margin-top:30px;
+        margin-left: 20px;
+
+        img{
+            height: 17px;
+        }
+    }
+
+    @media only screen and (min-width:341px) and (max-width:380px){
+        background: transparent;
+        border: none;
+        z-index: 99;
+        position: fixed;
+        margin-top:30px;
+        margin-left: 20px;
+
+        img{
+            height: 19px;
+        }
+    }
+
+    @media only screen and (min-width:403px) and (max-width:430px){
+        background: transparent;
+        border: none;
+        z-index: 99;
+        position: fixed;
+        margin-top:30px;
+        margin-left: 20px;
+
+        img{
+            height: 21px;
+        }
+    }
+
+    @media only screen and (min-width:381px) and (max-width:402px){
+        background: transparent;
+        border: none;
+        z-index: 99;
+        position: fixed;
+        margin-top:30px;
+        margin-left: 20px;
+
+        img{
+            height: 23px;
+        }
+    }
+
+
+    @media only screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
 
 .buy-title{
     display: flex;

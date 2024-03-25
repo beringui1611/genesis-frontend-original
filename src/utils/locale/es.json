@@ -1,15 +1,24 @@
 {
-    "translation":{
-        "header":{
+    "translation": {
+        "header": {
             "buyNow": "¡Cómpralo Ahora!",
             "about": "Sobre Génesis",
             "community": "Comunidad",
             "farm": "Granja",
             "whitepaper": "Libro Blanco",
-            "connect":"Conectar Billetera",
-            "desconnect":"Desconectar",
-            "viewExplorer":"Ver Explorador"
+            "connect": "Conectar Billetera",
+            "desconnect": "Desconectar",
+            "viewExplorer": "Ver Explorador"
+        },
+        "home": {
+            "buyNowTwo": "¡Compra Ahora!",
+            "welcome": "Bienvenido a GCoin, un token digital revolucionario que está cambiando la forma en que el mundo invierte y participa en el universo de los criptoactivos.",
+            "why": "¿Por Qué Elegir GCoin?",
+            "evolution": "En el mundo en constante evolución de las criptomonedas, GCoin se destaca como una opción de inversión única, ofreciendo una serie de ventajas que lo diferencian de otras opciones disponibles en el mercado. Aquí hay algunas razones por las cuales invertir en GCoin puede ser la mejor decisión que tomarás:",
+            "unlock": "Desbloqueando Nuevas Oportunidades: GCoin y el Futuro de las Criptomonedas:",
+            "waitOne": "Mientras que algunas criptomonedas luchan por ofrecer una propuesta de valor clara y sostenible, GCoin se destaca como una solución integral e innovadora. Así es como podemos comparar el mercado actual con lo que podemos lograr con GCoin:",
+            "waitTwo": "A medida que el mercado de las criptomonedas continúa creciendo y evolucionando rápidamente, muchos inversores enfrentan desafíos y limitaciones al buscar oportunidades de inversión significativas. Aquí es donde entra GCoin: un nuevo enfoque para invertir y participar en el emocionante mundo de las criptomonedas.",
+            "joinNow": "¡ÚNETE AHORA!"
         }
     }
 }
-

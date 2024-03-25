@@ -143,23 +143,23 @@ export default function Farm() {
 
       <h1 id="h1-genesis">GÊNESIS Farm</h1>
 
-      <p id="paragraph-mkt">This is where you put your PLG to render. Remembering that after placing your PLG to farm, you will only be able to withdraw your income in 30 days. </p>
+      <p id="paragraph-mkt">This is where you put your GNS to render. Remembering that after placing your GNS to farm, you will only be able to withdraw your income in 30 days. </p>
 
 
       <Link id="link" style={{
-      }} to="/buy">Get PLG <img src={ArrowIcon} alt="arrow-icon" /></Link>
+      }} to="/buy">Get GNS <img src={ArrowIcon} alt="arrow-icon" /></Link>
 
       <div id="container-grid">
         <div id="grid-one" className="grids">
           <div id="div-one-farm">
             <p id="text-one">Don't know how to use the platform? learn now.</p>
-            <h2 id="title-one">Plural Genêsis</h2>
+            <h2 id="title-one">Genêsis Coin</h2>
             <button id="btn-learn">Click here</button>
           </div>
         </div>
         <div id="grid-two" className="grids">
           <h3 id="manage-title">Manage</h3>
-          <span id="manage-paragraph">manage your Plural Genesis.</span>
+          <span id="manage-paragraph">manage your Gênesis Coin.</span>
           <div id="container-button">
             <button style={{
               backgroundColor: isActive === 1 ? "#FF3395" : "transparent",
@@ -197,14 +197,14 @@ export default function Farm() {
                 (
                   <div id="active-1">
                     <p id="farm-paragraph">Farm</p>
-                    <p id="farm-value">1 PLG ($1) = $0.001 USDT a month.</p>
+                    <p id="farm-value">1 GNS ($1) = $0.001 USDT a month.</p>
                     <div id="box-farm-one">
                       <div id="box-value">
                         <input onChange={handleChangeValueFarming} id="input-value" value={inputValue} placeholder="0.0" type="number" min="0" maxLength={9} />
                         <p id="convert-time">${valueMonth.toFixed(2)}</p>
                       </div>
                       <div id="box-balance">
-                        <p className="wallet-value"><img src={Block} alt="blocks" />PLG</p>
+                        <p className="wallet-value"><img src={Block} alt="blocks" />GNS</p>
                         <p className="wallet-value-two">
                           <img style={{ width: "30px", marginTop: "9px", marginRight: "-6px" }} src={Wallet} alt="wallet" />
                           {valueMonth ?
@@ -261,14 +261,14 @@ export default function Farm() {
                 (
                   <div id="active-1">
                     <p id="farm-paragraph">Reward</p>
-                    <p id="farm-value">1 PLG ($1) = $0.001 USDT a month.</p>
+                    <p id="farm-value">1 GNS ($1) = $0.001 USDT a month.</p>
                     <div id="box-farm-one">
                       <div id="box-value">
                         <input  id="input-value" value={farming} placeholder="0.0" type="number" min="0" disabled />
                         <p id="convert-time">${(farming * 10 /100).toFixed(2) }</p>
                       </div>
                       <div id="box-balance">
-                        <p className="wallet-value"><img src={Block} alt="blocks" />PLG</p>
+                        <p className="wallet-value"><img src={Block} alt="blocks" />GNS</p>
                         <p className="wallet-value-two">
                           <img style={{ width: "30px", marginTop: "9px", marginRight: "-6px" }} src={Wallet} alt="wallet" />
                           {
@@ -326,14 +326,14 @@ export default function Farm() {
                 (
                   <div id="active-1">
                     <p id="farm-paragraph">Withdraw</p>
-                    <p id="farm-value">1 PLG ($1) = $0.001 USDT a month.</p>
+                    <p id="farm-value">1 GNS ($1) = $0.001 USDT a month.</p>
                     <div id="box-farm-one">
                       <div id="box-value">
                         <input onChange={handleChangeValueFarming} id="input-value" value={inputValue} placeholder="0.0" type="number" min="0" maxLength={9} />
                         <p id="convert-time">${valueMonth.toFixed(2)}</p>
                       </div>
                       <div id="box-balance">
-                        <p className="wallet-value"><img src={Block} alt="blocks" />PLG</p>
+                        <p className="wallet-value"><img src={Block} alt="blocks" />GNS</p>
                         <p className="wallet-value-two">
                           <img style={{ width: "30px", marginTop: "9px", marginRight: "-6px" }} src={Wallet} alt="wallet" />
                           {
@@ -378,7 +378,7 @@ export default function Farm() {
             <div className="container-primary-balance">
               <div className="container-balance-plg">
                 <p id="paragraph-farm">balance</p>
-                <p id="h1-plg"><img src={Block} alt="usdt" />PLG</p>
+                <p id="h1-plg"><img src={Block} alt="usdt" />GNS</p>
               </div>
               <div className="container-amount">
                 <p className="amount" id="dolar-amount">{parseInt(balance).toFixed(2)}</p>

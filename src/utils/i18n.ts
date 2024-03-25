@@ -16,7 +16,7 @@ i18n.use(initReactI18next).init({
         pt: pt,
         ar: ar,
         jp: jp,
-        ch: ch
+        ch: ch,
     },
     react: {
         useSuspense: false,
