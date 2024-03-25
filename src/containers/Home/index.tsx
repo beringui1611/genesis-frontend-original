@@ -10,6 +10,9 @@ import ArrowRight from "../../assets/Home-assets/Arrow 1.svg";
 import Cell from "../../assets/Home-assets/cellphone.svg"
 import Notification from "../../assets/Home-assets/notification.svg"
 import QrCode from "../../assets/Home-assets/QR Code.svg"
+import Girl from '../../assets/Home-assets/future.png';
+import Man from '../../assets/Home-assets/man.jpg';
+import Predio from '../../assets/Home-assets/predios.png';
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import { useTranslation } from "react-i18next";
@@ -37,7 +40,7 @@ function Home() {
         </div>
       </div>
       <div className="big-container-two">
-        <div className="container-two"></div>
+        <div className="container-two"><img id="girl-picture" src={Girl} alt="girl"/></div>
         <h1 id="text-big-two"><span>{t("home.why")}</span>
           {t("home.evolution")} <a style={{ color: "#fff", fontWeight: "bold", textDecoration: "underline", marginLeft: "10px" }} href="/whitepaper">{t("header.whitepaper")}</a></h1>
       </div>
@@ -45,9 +48,9 @@ function Home() {
         <BlocksTwo src={BackgroundImg} />
         <div className="title"><h1 id="title-text">{t("home.unlock")}</h1></div>
         <div className="two-containers">
-          <div></div>
+          <div><img id="predios" src={Predio} alt="predios" /></div>
           <hr className="vertical-line" />
-          <div></div>
+          <div><img id="man-image" src={Man} alt="man" /></div>
         </div>
         <div id="carousel"><Carousel /></div>
         <div className="three-containers">
@@ -60,8 +63,8 @@ function Home() {
 
         </div>
         <div className="buttons-containers">
-          <button><h1>{t("header.community")}</h1></button>
-          <button><h1>{t("header.connect")}</h1></button>
+          <button><h1>Twitter</h1></button>
+          <button><h1>Discord</h1></button>
         </div>
         <div className="container-phone">
           <img src={Cell} id="cellphone" alt="cellphone" />

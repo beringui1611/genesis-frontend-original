@@ -119,6 +119,7 @@ overflow-y: hidden;
     }
 }
 
+
 .big-container-one{
 display: flex;
 margin-left: 300px;
@@ -160,10 +161,29 @@ h2{
 
 .container-two{
 background-color:rgba(66, 65, 65, 0.5);
-width: 634px;
-height: 312px;
+width: 540px;
+height: 356px;
 border:3px solid rgba(203, 203, 203, 0.8);
 border-radius: 43px ;
+}
+
+#girl-picture{
+    width:534px;
+    height:350px;
+    border-radius:43px;
+}
+
+#man-image{
+    width:616px;
+    height:442px;
+    border-radius:40px;
+}
+
+#predios{
+    width:616px;
+    height:442px;
+    border-radius:40px;
+
 }
 
 .big-container-two{
@@ -191,12 +211,19 @@ border-radius: 43px ;
     
 
     .big-container-one{
-        margin-left: 9.5%;
+        margin-left: 0%;
         margin-top: 27%;
     }
 
+    #girl-picture{
+    width:254px;
+    height:298px;
+    border-radius:43px;
+}
+
+
     .container-one{
-        width: 20.2rem;
+        width: 20.0rem;
         height: 10rem;
         border-radius:15px;
 
@@ -262,6 +289,12 @@ border-radius: 43px ;
         margin-top: 27%;
     }
 
+    #girl-picture{
+    width:254px;
+    height:298px;
+    border-radius:43px;
+}
+
     .container-one{
         width: 16.2rem;
         height: 10rem;
@@ -324,6 +357,12 @@ border-radius: 43px ;
         margin-left: 2.5%;
         margin-top: 27%;
     }
+
+    #girl-picture{
+    width:268px;
+    height:298px;
+    border-radius:43px;
+}
 
     .container-one{
         width: 22.2rem;
@@ -388,6 +427,12 @@ border-radius: 43px ;
         margin-top: 27%;
     }
 
+    #girl-picture{
+    width:318px;
+    height:330px;
+    border-radius:43px;
+}
+
     .container-one{
         border-radius: 25px;
         width: 25.2rem;
@@ -451,6 +496,12 @@ border-radius: 43px ;
         margin-left: 9.5%;
         margin-top: 27%;
     }
+
+    #girl-picture{
+    width:318px;
+    height:330px;
+    border-radius:43px;
+}
 
     .container-one{
         width: 20.2rem;

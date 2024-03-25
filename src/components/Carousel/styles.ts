@@ -5,6 +5,18 @@ export const Container = styled.div`
 @media only screen and (max-width: 320px){
     margin-left: 9%;
 
+    
+    #pic-predios{
+      width:217px;
+      height:296px;
+      border-radius:40px;
+    }
+
+    #pic-man{
+      width:217px;
+      height:296px;
+      border-radius:40px;
+    }
     .container-carousel{
         background-color:rgba(66, 65, 65, 0.5);
         width: 14rem;
@@ -40,6 +52,18 @@ export const Container = styled.div`
 @media only screen and (min-width:321px) and (max-width:340px){
   margin-left: 9%;
 
+  #pic-predios{
+      width:217px;
+      height:296px;
+      border-radius:40px;
+    }
+
+    #pic-man{
+      width:217px;
+      height:296px;
+      border-radius:40px;
+    }
+
     .container-carousel{
         background-color:rgba(66, 65, 65, 0.5);
         width: 14rem;
@@ -61,6 +85,7 @@ export const Container = styled.div`
       }
     }
 
+
    .swiper-button-prev{
      color:rgba(255, 51, 149, 1) ;
      margin-top: -30%;
@@ -74,6 +99,19 @@ export const Container = styled.div`
 
 @media only screen and (min-width:341px) and (max-width:380px){
   margin-left: 9%;
+
+  #pic-predios{
+      width:217px;
+      height:296px;
+      border-radius:40px;
+    }
+
+    #pic-man{
+      width:217px;
+      height:296px;
+      border-radius:40px;
+    }
+
 
     .container-carousel{
         background-color:rgba(66, 65, 65, 0.5);
@@ -110,6 +148,18 @@ export const Container = styled.div`
 @media only screen and (min-width:403px) and (max-width:430px){
   margin-left: 9%;
 
+  #pic-predios{
+      width:264px;
+      height:296px;
+      border-radius:40px;
+    }
+
+    #pic-man{
+      width:264px;
+      height:296px;
+      border-radius:40px;
+    }
+
     .container-carousel{
         background-color:rgba(66, 65, 65, 0.5);
         width: 17rem;
@@ -144,7 +194,17 @@ export const Container = styled.div`
 
 @media only screen and (min-width:381px) and (max-width:402px){
   margin-left: 9%;
+  #pic-predios{
+      width:264px;
+      height:296px;
+      border-radius:40px;
+    }
 
+    #pic-man{
+      width:264px;
+      height:296px;
+      border-radius:40px;
+    }
     .container-carousel{
         background-color:rgba(66, 65, 65, 0.5);
         width: 17rem;
