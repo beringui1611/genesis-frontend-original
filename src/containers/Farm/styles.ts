@@ -631,7 +631,7 @@ export const Container = styled.div`
 }
 
 @media only screen and (min-width:321px) and (max-width:340px) {
-  height:260vh;
+  height:300vh;
   overflow-x: hidden;
   
   #h1-genesis{
@@ -834,7 +834,7 @@ export const Container = styled.div`
 }
 
 @media only screen and (min-width:341px) and (max-width:380px) {
-  height:250vh;
+  height:280vh;
   overflow-x: hidden;
   
   #h1-genesis{
