@@ -66,6 +66,7 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         font-size:12px;
+        align-items: center;
     }
 
     #btn-close{
@@ -157,6 +158,7 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         font-size:12px;
+        align-items: center;
     }
 
     #btn-close{
@@ -247,6 +249,7 @@ export const Container = styled.div`
     #info{
         display: flex;
         flex-direction: column;
+        align-items: center;
         font-size:12px;
     }
 
@@ -339,6 +342,7 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         font-size:12px;
+        align-items: center;
     }
 
     #btn-close{
@@ -401,6 +405,99 @@ export const Container = styled.div`
         flex-direction: column;
         z-index:99;
         margin-top:480px;
+        gap:10px;
+    }
+
+    #box-info{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    #address{
+      max-width: 100px; 
+      color: #ffff;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+    }
+
+    #profile-box{
+        width:30px;
+        height:30px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(255,149,0,1) 84%);
+        border-radius:20px;
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        font-size:12px;
+        gap:10px;
+        align-items: center;
+    }
+
+    #btn-close{
+        background-color:transparent;
+        border: none;
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+    #explorer{
+        color:#FF3395;
+        font-weight:500;
+        font-size:12px;
+        &:hover{
+            color:#fff;
+        }
+    }
+
+   #cnt-wallet{
+    background-color:transparent;
+    border: none;
+    color: #fff;
+   }
+}
+
+@media only screen and (max-height:724px){
+    #container-menu{
+     position: fixed;
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+     text-decoration: none;
+     z-index: 98;
+     margin-top: -100px;
+     padding-left: 20px;
+     padding-bottom: 590px;
+     padding-top: 100px;
+     padding-right: 70px;
+     background-color: rgba(0, 0, 0, 0.8);
+     a{
+         color: white;
+     }
+    }
+
+    #background-menu{
+        height: 100vh;
+        background-color: rgba(41, 41, 41, 1);
+        position: fixed;
+        margin-top: 100px;
+        z-index: 97;
+    }
+
+    #end-box{
+       position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index:99;
+        margin-top:400px;
         gap:10px;
     }
 

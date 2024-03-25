@@ -86,7 +86,7 @@ function ModalCell(){
             <div id="box-primary-cell">
                <p id="p-connect">Choose your wallet</p>
                <div id="box-btn">
-                   <button onClick={connectMetaMask} className="btn-connect"><img src={MetaMask} alt="metamask"/></button>
+                   <button onClick={handleClickMetaMask} className="btn-connect"><img src={MetaMask} alt="metamask"/></button>
                    <button onClick={handleClickInjected} className="btn-connect"><img src={Inject} alt="inject"/></button>
                    <button onClick={handleClickTrustWallet} className="btn-connect"><img src={Trust} alt="trustwallet"/></button>
                </div>
