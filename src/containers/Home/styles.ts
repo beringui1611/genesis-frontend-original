@@ -438,8 +438,8 @@ border-radius: 43px ;
         width: 25.2rem;
         height: 12rem;
 
-        h1{
-            margin-top: 10%;
+        #buy-h1{
+            margin-top: 7%;
             font-size: 24px;
 
             a{
@@ -451,8 +451,8 @@ border-radius: 43px ;
             }
         }
 
-        h2{
-            width: 20rem;
+        #buy-h2{
+            width: 23rem;
             font-size: 16px;
             margin-left:6.5%;
         }
@@ -508,7 +508,7 @@ border-radius: 43px ;
         height: 12rem;
 
         h1{
-            margin-top: 16%;
+            margin-top: 10%;
             font-size: 24px;
 
             a{
@@ -521,7 +521,7 @@ border-radius: 43px ;
         }
 
         h2{
-            width: 15rem;
+            width: 18rem;
             font-size: 16px;
             margin-left:10.5%;
         }

@@ -35,8 +35,8 @@ function Home() {
 
       <div className="big-container-one">
         <div className="container-one">
-          <h1><Link to="/buy">{t("home.buyNowTwo")}<img src={ArrowRight} alt="arrow" /></Link></h1>
-          <h2>{t("home.welcome")}</h2>
+          <h1 id="buy-h1"><Link to="/buy">{t("home.buyNowTwo")}<img src={ArrowRight} alt="arrow" /></Link></h1>
+          <h2 id="buy-h2">{t("home.welcome")}</h2>
         </div>
       </div>
       <div className="big-container-two">
