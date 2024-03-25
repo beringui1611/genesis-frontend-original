@@ -155,5 +155,7 @@ background-color: rgba(0,0,0,0.6);
 position: fixed;
 margin-left: -1639px;
 margin-top: -67px;
+
+
 `
 
