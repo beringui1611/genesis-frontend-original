@@ -207,7 +207,7 @@ border-radius: 43px ;
 }
 
 @media only screen and (max-width: 320px){
-    height: 560vh;
+    height: 600vh;
 
     
 
@@ -352,7 +352,7 @@ border-radius: 43px ;
 }
 
 @media only screen and (min-width:341px) and (max-width:380px){
-    height: 400vh;
+    height: 480vh;
 
     .big-container-one{
         margin-left: 2.5%;
@@ -1180,7 +1180,7 @@ export const ContainerThree = styled.div`
    }
 }
 
-@media only screen and (min-width:321px) and (max-width:340px){
+@media only screen and (min-width:254px) and (max-width:340px){
     margin-left: -360%;
    margin-top: 200%;
 

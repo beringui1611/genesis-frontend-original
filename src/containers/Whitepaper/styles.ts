@@ -160,7 +160,7 @@ overflow-x:hidden;
 @media only screen and (min-width:321px) and (max-width:340px){
     height: 300vh;
     .containers-pdf{
-        overflow-y:hidden;
+    overflow-y:hidden;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -195,9 +195,9 @@ overflow-x:hidden;
 }
 
 @media only screen and (min-width:341px) and (max-width:380px){
-    height: 250vh;
+    height: 300vh;
     .containers-pdf{
-        overflow-y:hidden;
+    overflow-y:hidden;
     display: flex;
     justify-content: center;
     flex-direction: column;

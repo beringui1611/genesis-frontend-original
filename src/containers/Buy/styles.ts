@@ -424,11 +424,11 @@ h2{
 }
 
 @media only screen and (min-width:375px) and (max-width:425px){
-    height: 160vh;
+    height: 180vh;
 
      .buy-title{
         margin-left: 10px;
-
+        margin-top:60px;
         h1{
         color: #FF54A6;
         font-size: 30px;
