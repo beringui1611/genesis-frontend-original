@@ -15,6 +15,7 @@ import Charts from "../../components/Charts";
 import CellMenu from "../../components/Cell-Menu";
 import ThreeLines from "../../assets/Media-assets/three-lines.svg"
 import CloseLines from "../../assets/Media-assets/close-lines.svg"
+import ModalCell from "../../components/Modal-cell";
 
 export default function Farm() {
   const [isActive, setIsActive] = useState<number>(1);
@@ -25,6 +26,7 @@ export default function Farm() {
   const [usdt, setUsdt] = useState<any>(0);
   const [farming, setFarming] = useState<any>(0);
   const [menuMobile, setCloseMenuMobile] = useState(false);
+
 
 
   async function handleClickYieldFarming() {
@@ -82,6 +84,7 @@ export default function Farm() {
 
   function handleClickOpenModal() {
     setModal(!modal);
+    console.log("ola")
 
   }
 
@@ -242,14 +245,16 @@ export default function Farm() {
                         </div>
                       )
                         :
-                        <button onClick={handleClickOpenModal} className="wallet">Connect Wallet</button>
+                     
+                        <button  onClick={handleClickOpenModal} id="btn-connect" className="wallet">Connect Wallet</button> 
 
                     }
 
                     {
-                      modal && <Modal />
+                      modal && <Modal /> 
                     }
 
+                   
                   </div>
                 )
                 :
@@ -313,7 +318,7 @@ export default function Farm() {
                     {
                       modal && <Modal />
                     }
-
+                   
                   </div>
                 )
                 :
@@ -355,10 +360,13 @@ export default function Farm() {
 
                     }
 
-                    {
-                      modal && <Modal />
-                    }
-
+                  
+                      <div id="container-mobile">
+                        {
+                           modal && <Modal />
+                        }
+                      </div>
+    
                   </div>
                 )
                 :

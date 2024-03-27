@@ -8,13 +8,18 @@ width: 995px;
 height:591px;
 z-index: 99;
 
+@media screen and (max-width:320px) and (max-width:500px){
+    display: none;
+}
 
 #box-primaryu{
 display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: row;
-
+@media screen and (max-width:320px) and (max-width:500px){
+    display: none;
+}
 }
 
 #box-one{
@@ -156,6 +161,9 @@ position: fixed;
 margin-left: -1639px;
 margin-top: -67px;
 
+@media screen and (max-width:320px) and (max-width:500px){
+    display: none;
+}
 
 `
 

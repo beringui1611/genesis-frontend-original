@@ -31,6 +31,7 @@ overflow-y: hidden;
     margin-bottom: 10px;
 }
 
+
 @media only screen and (min-width: 1439px) and (max-width: 1441px){
     #text-big-two{
     font-size: 24px;
