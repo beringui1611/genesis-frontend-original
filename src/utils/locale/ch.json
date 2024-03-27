@@ -19,6 +19,64 @@
             "waitOne": "虽然一些加密货币努力提供清晰和可持续的价值主张，但GCoin凭借其全面而创新的解决方案脱颖而出。以下是我们如何将当前市场与GCoin的潜力进行比较的方式：",
             "waitTwo": "随着加密货币市场的迅速增长和演变，许多投资者在寻找重大投资机会时面临挑战和限制。这就是GCoin的用武之地 - 一种参与和投资令人兴奋的加密货币世界的新方法。",
             "joinNow": "立即加入！"
-        }
+        },
+        
+            "footer": {
+                "buyNow": "立即购买！",
+                "about": "关于创世纪",
+                "community": "社区",
+                "farm": "农场",
+                "whitepaper": "白皮书",
+                "connect": "连接钱包",
+                "desconnect": "断开连接",
+                "viewExplorer": "查看资源管理器",
+                "privacy": "隐私政策",
+                "mediaInquiries": "关于 Plural Gênesis 的媒体查询 - contact@pluralgenesis.org",
+                "copyright": "© 由 Next Chain 开发的技术"
+                
+            },
+            
+            "farm": {
+                "titleOne": "GÊNESYS 农场",
+                "paragraph": "这是您放置 GNS 进行挖矿的地方。请记住，在将您的 GNS 放置到农场后，您只能在 30 天后提取您的收入。",
+                "get": "获取 GNS",
+                "learnParagraph": "不知道如何使用平台？现在学习。",
+                "titleLearn": "创世币",
+                "learnClick": "点击这里",
+                "manage": "管理",
+                "farmButton": "农场",
+                "convert": "1 GNS（$1）= 每月 $0.001 USDT。",
+                "buttonConnect": "连接钱包",
+                "manageParagraph": "管理您的创世币。"
+            },
+
+            "reward": {
+                "getReward": "获取奖励",
+                "reward": "奖励"
+            },
+
+            "withdraw": {
+                "withdraw": "提现"
+            },
+
+            "balance": {
+                "your": "您的余额",
+                "balance": "余额",
+                "rated": "评级"
+            },
+
+            "buy": {
+                "title": "购买 GÊNESYS",
+                "paragraph": "在这里，您可以将您的 USDT 兑换成 Gênesis Coin。转换完成后，立即开始农场生产！",
+                "getFarming": "开始农场生产",
+                "convert": "转换为",
+                "for": "为",
+                "connect": "连接钱包",
+                "pay": "支付"
+            },
+            "whitepaper": {
+                "white": "白皮书"
+            }
+                
     }
 }

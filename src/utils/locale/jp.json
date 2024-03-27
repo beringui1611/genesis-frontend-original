@@ -19,6 +19,63 @@
             "waitOne": "一部の仮想通貨が明確で持続可能な価値提案を提供するのに苦労している中、GCoinは包括的で革新的なソリューションとして際立っています。現在の市場とGCoinのポテンシャルを比較する方法については以下をご覧ください：",
             "waitTwo": "仮想通貨市場が急速に成長し進化する中、多くの投資家が重要な投資機会を求めて課題や制限に直面しています。そこでGCoinが登場します。これは仮想通貨の世界における新しい投資や参加のアプローチです。",
             "joinNow": "今すぐ参加！"
-            }  
+            },
+
+            "footer": {
+                "buyNow": "今すぐ購入！",
+                "about": "ジェネシスについて",
+                "community": "コミュニティ",
+                "farm": "ファーム",
+                "whitepaper": "ホワイトペーパー",
+                "connect": "ウォレットに接続",
+                "desconnect": "切断",
+                "viewExplorer": "エクスプローラーを表示",
+                "privacy": "プライバシーポリシー",
+                "mediaInquiries": "Plural Gênesis のメディア問い合わせ - contact@pluralgenesis.org",
+                "copyright": "© Next Chain によって開発された技術"
+            },
+            
+            "farm": {
+                "titleOne": "GÊNESYS ファーム",
+                "paragraph": "ここにGNSを投入してレンダリングします。GNSをファームに投入した後は、収益を30日後にのみ引き出すことができます。",
+                "get": "GNSを取得",
+                "learnParagraph": "プラットフォームの使い方がわからないですか？ 今すぐ学びます。",
+                "titleLearn": "ジェネシスコイン",
+                "learnClick": "ここをクリック",
+                "manage": "管理",
+                "farmButton": "ファーム",
+                "convert": "1 GNS（$1）= 1か月あたり$0.001 USDT。",
+                "buttonConnect": "ウォレットに接続",
+                "manageParagraph": "ジェネシスコインを管理する。"
+            },
+
+            "reward": {
+                "getReward": "報酬を受け取る",
+                "reward": "報酬"
+            },
+
+            "withdraw": {
+                "withdraw": "引き出す"
+            },
+
+            "balance": {
+                "your": "あなたの残高",
+                "balance": "残高",
+                "rated": "評価された"
+            },
+
+            "buy": {
+                "title": "GÊNESYSを購入する",
+                "paragraph": "ここでは、USDT を Gênesis Coin に変換します。変換が完了したら、すぐにファーミングを開始してください！",
+                "getFarming": "ファーミングを開始する",
+                "convert": "変換先",
+                "for": "対象",
+                "connect": "ウォレットに接続",
+                "pay": "支払い"
+            },
+            
+            "whitepaper": {
+                "white": "ホワイトペーパー"
+            }
     }
 }

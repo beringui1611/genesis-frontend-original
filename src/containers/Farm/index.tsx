@@ -15,7 +15,7 @@ import Charts from "../../components/Charts";
 import CellMenu from "../../components/Cell-Menu";
 import ThreeLines from "../../assets/Media-assets/three-lines.svg"
 import CloseLines from "../../assets/Media-assets/close-lines.svg"
-import ModalCell from "../../components/Modal-cell";
+import { useTranslation } from "react-i18next";
 
 export default function Farm() {
   const [isActive, setIsActive] = useState<number>(1);
@@ -26,6 +26,7 @@ export default function Farm() {
   const [usdt, setUsdt] = useState<any>(0);
   const [farming, setFarming] = useState<any>(0);
   const [menuMobile, setCloseMenuMobile] = useState(false);
+  const {t} = useTranslation();
 
 
 
@@ -144,25 +145,25 @@ export default function Farm() {
       <div id="disable"> <Header /></div>
      
 
-      <h1 id="h1-genesis">GÊNESIS Farm</h1>
+      <h1 id="h1-genesis">{t("farm.titleOne")}</h1>
 
-      <p id="paragraph-mkt">This is where you put your GNS to render. Remembering that after placing your GNS to farm, you will only be able to withdraw your income in 30 days. </p>
+      <p id="paragraph-mkt">{t("farm.paragraph")}</p>
 
 
       <Link id="link" style={{
-      }} to="/buy">Get GNS <img src={ArrowIcon} alt="arrow-icon" /></Link>
+      }} to="/buy">{t("farm.get")} <img src={ArrowIcon} alt="arrow-icon" /></Link>
 
       <div id="container-grid">
         <div id="grid-one" className="grids">
           <div id="div-one-farm">
-            <p id="text-one">Don't know how to use the platform? learn now.</p>
-            <h2 id="title-one">Genêsis Coin</h2>
-            <button id="btn-learn">Click here</button>
+            <p id="text-one">{t("farm.learnParagraph")}</p>
+            <h2 id="title-one">{t("farm.titleLearn")}</h2>
+            <button id="btn-learn">{t("farm.learnClick")}</button>
           </div>
         </div>
         <div id="grid-two" className="grids">
-          <h3 id="manage-title">Manage</h3>
-          <span id="manage-paragraph">manage your Gênesis Coin.</span>
+          <h3 id="manage-title">{t("farm.manage")}</h3>
+          <span id="manage-paragraph">{t("farm.manageParagraph")}</span>
           <div id="container-button">
             <button style={{
               backgroundColor: isActive === 1 ? "#FF3395" : "transparent",
@@ -171,7 +172,7 @@ export default function Farm() {
               cursor: "pointer"
             }} className="btn-choose"
               onClick={() => handleClickActive(1)}
-            >Farm</button>
+            >{t("farm.farmButton")}</button>
 
             <button style={{
               backgroundColor: isActive === 2 ? "#FF3395" : "transparent",
@@ -180,7 +181,7 @@ export default function Farm() {
               cursor: "pointer"
             }} className="btn-choose"
               onClick={() => handleClickActive(2)}>
-              Get Reward</button>
+              {t("reward.getReward")}</button>
 
             <button style={{
               backgroundColor: isActive === 3 ? "#FF3395" : "transparent",
@@ -189,7 +190,7 @@ export default function Farm() {
               cursor: "pointer"
             }} className="btn-choose"
               onClick={() => handleClickActive(3)}>
-              Withdraw</button>
+              {t("withdraw.withdraw")}</button>
           </div>
 
           <hr id="line"></hr>
@@ -199,8 +200,8 @@ export default function Farm() {
               isActive === 1 ?
                 (
                   <div id="active-1">
-                    <p id="farm-paragraph">Farm</p>
-                    <p id="farm-value">1 GNS ($1) = $0.001 USDT a month.</p>
+                    <p id="farm-paragraph">{t("farm.manage")}</p>
+                    <p id="farm-value">{t("farm.convert")}</p>
                     <div id="box-farm-one">
                       <div id="box-value">
                         <input onChange={handleChangeValueFarming} id="input-value" value={inputValue} placeholder="0.0" type="number" min="0" maxLength={9} />
@@ -239,14 +240,14 @@ export default function Farm() {
                     {
                       localStorage.getItem('wallet') ? (
                         <div>
-                          <button onClick={handleClickYieldFarming} className="wallet">Farming</button>
+                          <button onClick={handleClickYieldFarming} className="wallet">{t("farm.farmButton")}</button>
 
 
                         </div>
                       )
                         :
                      
-                        <button  onClick={handleClickOpenModal} id="btn-connect" className="wallet">Connect Wallet</button> 
+                        <button  onClick={handleClickOpenModal} id="btn-connect" className="wallet">{t("farm.buttonConnect")}</button> 
 
                     }
 
@@ -265,8 +266,8 @@ export default function Farm() {
               isActive === 2 ?
                 (
                   <div id="active-1">
-                    <p id="farm-paragraph">Reward</p>
-                    <p id="farm-value">1 GNS ($1) = $0.001 USDT a month.</p>
+                    <p id="farm-paragraph">{t("reward.reward")}</p>
+                    <p id="farm-value">{t("farm.convert")}</p>
                     <div id="box-farm-one">
                       <div id="box-value">
                         <input  id="input-value" value={farming} placeholder="0.0" type="number" min="0" disabled />
@@ -305,13 +306,13 @@ export default function Farm() {
                     {
                       localStorage.getItem('wallet') ? (
                         <div>
-                          <button onClick={handleClickGetRewards} className="wallet">Get Reward</button>
+                          <button onClick={handleClickGetRewards} className="wallet">{t("reward.getReward")}</button>
 
 
                         </div>
                       )
                         :
-                        <button onClick={handleClickOpenModal} className="wallet">Connect Wallet</button>
+                        <button onClick={handleClickOpenModal} className="wallet">{t("farm.buttonConnect")}</button>
 
                     }
 
@@ -330,8 +331,8 @@ export default function Farm() {
               isActive === 3 ?
                 (
                   <div id="active-1">
-                    <p id="farm-paragraph">Withdraw</p>
-                    <p id="farm-value">1 GNS ($1) = $0.001 USDT a month.</p>
+                    <p id="farm-paragraph">{t("withdraw.withdraw")}</p>
+                    <p id="farm-value">{t("farm.convert")}</p>
                     <div id="box-farm-one">
                       <div id="box-value">
                         <input onChange={handleChangeValueFarming} id="input-value" value={inputValue} placeholder="0.0" type="number" min="0" maxLength={9} />
@@ -350,13 +351,13 @@ export default function Farm() {
                     {
                       localStorage.getItem('wallet') ? (
                         <div>
-                          <button onClick={handleClickRemoveYield} className="wallet">Withdraw</button>
+                          <button onClick={handleClickRemoveYield} className="wallet">{t("withdraw.withdraw")}</button>
 
 
                         </div>
                       )
                         :
-                        <button onClick={handleClickOpenModal} className="wallet">Connect Wallet</button>
+                        <button onClick={handleClickOpenModal} className="wallet">{t("farm.buttonConnect")}</button>
 
                     }
 
@@ -380,12 +381,12 @@ export default function Farm() {
         </div>
         <div id="grid-three" className="grids">
           <div id="container-primary">
-            <p id="your-balance">Your balance</p>
+            <p id="your-balance">{t("balance.your")}</p>
           </div>
           <div>
             <div className="container-primary-balance">
               <div className="container-balance-plg">
-                <p id="paragraph-farm">balance</p>
+                <p id="paragraph-farm">{t("balance.balance")}</p>
                 <p id="h1-plg"><img src={Block} alt="usdt" />GNS</p>
               </div>
               <div className="container-amount">
@@ -394,7 +395,7 @@ export default function Farm() {
             </div>
             <div className="container-primary-balance">
               <div className="container-balance-plg">
-                <p id="paragraph-usdt">Rated</p>
+                <p id="paragraph-usdt">{t("balance.rated")}</p>
                 <p id="usdt-amount"><img src={UsdtIcon} alt="usdt-icon" />USDT</p>
               </div>
               <div className="container-amount">

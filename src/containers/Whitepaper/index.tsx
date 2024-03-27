@@ -6,13 +6,15 @@ import { useState } from "react"
 import ThreeLines from "../../assets/Media-assets/three-lines.svg"
 import CloseLines from "../../assets/Media-assets/close-lines.svg"
 import CellMenu from "../../components/Cell-Menu"
+import { useTranslation } from "react-i18next"
 
 
 
 
 
 function Whitepaper(){
-  const [ menu, setMenu ] = useState(false)
+  const [ menu, setMenu ] = useState(false);
+  const {t} = useTranslation();
 
   function clickButton(){
     setMenu(!menu)
@@ -24,7 +26,7 @@ function Whitepaper(){
       <button onClick={clickButton} id="button-whitepaper"><img src={menu ? CloseLines : ThreeLines} alt="button-menu" /></button>
       { menu && <CellMenu/>}
       <div className="whitepaper-title">
-        <h1>Whitepaper</h1>
+        <h1>{t("whitepaper.white")}</h1>
       </div>
       <div className="containers-pdf">
         <div><a href="" download=""><img src={DownloadSimbol} alt="donwload-simbol" />English</a></div>

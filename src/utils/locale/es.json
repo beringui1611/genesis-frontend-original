@@ -19,6 +19,65 @@
             "waitOne": "Mientras que algunas criptomonedas luchan por ofrecer una propuesta de valor clara y sostenible, GCoin se destaca como una solución integral e innovadora. Así es como podemos comparar el mercado actual con lo que podemos lograr con GCoin:",
             "waitTwo": "A medida que el mercado de las criptomonedas continúa creciendo y evolucionando rápidamente, muchos inversores enfrentan desafíos y limitaciones al buscar oportunidades de inversión significativas. Aquí es donde entra GCoin: un nuevo enfoque para invertir y participar en el emocionante mundo de las criptomonedas.",
             "joinNow": "¡ÚNETE AHORA!"
-        }
+        },
+
+        
+            "footer": {
+                "buyNow": "¡Compra ahora!",
+                "about": "Acerca de Génesis",
+                "community": "Comunidad",
+                "farm": "Granja",
+                "whitepaper": "Documento técnico",
+                "connect": "Conectar billetera",
+                "desconnect": "Desconectar",
+                "viewExplorer": "Ver explorador",
+                "privacy": "Política de privacidad",
+                "mediaInquiries": "Consultas de medios para Plural Gênesis - contact@pluralgenesis.org",
+                "copyright": "© Tecnología desarrollada por Next Chain"
+
+            },
+
+            "farm": {
+                "titleOne": "Granja GÊNESYS",
+                "paragraph": "Aquí es donde colocas tus GNS para renderizar. Recordando que después de colocar tus GNS en la granja, solo podrás retirar tus ingresos en 30 días.",
+                "get": "Obtener GNS",
+                "learnParagraph": "¿No sabes cómo usar la plataforma? Aprende ahora.",
+                "titleLearn": "Moneda Génesis",
+                "learnClick": "Haz clic aquí",
+                "manage": "Gestionar",
+                "farmButton": "Granja",
+                "convert": "1 GNS ($1) = $0.001 USDT al mes.",
+                "buttonConnect": "Conectar billetera",
+                "manageParagraph": "Administra tu moneda Gênesis."
+            },
+
+            "reward": {
+                "getReward": "Obtener recompensa",
+                "reward": "Recompensa"
+            },
+
+            "withdraw": {
+                "withdraw": "Retirar"
+            },
+
+            "balance": {
+                "your": "Tu saldo",
+                "balance": "Saldo",
+                "rated": "Calificado"
+            },
+
+            "buy": {
+                "title": "Comprar GÊNESYS",
+                "paragraph": "Aquí es donde conviertes tus USDT a Gênesis Coin. ¡Una vez que se complete la conversión, simplemente comienza a cultivar!",
+                "getFarming": "Comenzar a cultivar",
+                "convert": "Convertir",
+                "for": "Por",
+                "connect": "Conectar billetera",
+                "pay": "Pago"
+            },
+
+            "whitepaper": {
+                "white": "Whitepaper"
+            }
     }
 }

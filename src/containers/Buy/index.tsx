@@ -13,12 +13,14 @@ import Modal from "../../components/Modal";
 import CellMenu from "../../components/Cell-Menu";
 import ThreeLines from "../../assets/Media-assets/three-lines.svg"
 import CloseLines from "../../assets/Media-assets/close-lines.svg"
+import { useTranslation } from "react-i18next";
 
 function Buy() {
 
   const [value, setValue] = useState<number>(0);
   const [modal, setModal] = useState<boolean>(false);
-  const [menu, setMenu] = useState(false)
+  const [menu, setMenu] = useState(false);
+  const {t} = useTranslation();
 
   function handleButton(){
     setMenu(!menu)
@@ -65,31 +67,31 @@ function Buy() {
       { menu && <CellMenu/>}
 
       <div className="buy-title">
-        <h1>Buy GÊNESIS</h1>
+        <h1>{t("buy.title")}</h1>
         <p>
-          This is where you convert your USDT to Gênesis Coin. Once the conversion is done, just start farming!
+         {t("buy.paragraph")}
         </p>
-        <Link to="/farm">Get Farming <img src={ArrowRight} alt="arror-right" /></Link>
+        <Link to="/farm">{t("buy.getFarming")}<img src={ArrowRight} alt="arror-right" /></Link>
       </div>
       <div className="buy-containers">
         <div className="itens-buy-container">
-          <h2>To Convert</h2>
+          <h2>{t("buy.convert")}</h2>
           <input onChange={swap} className="input-buy" placeholder="$0.00" min="0" type="number" />
         </div>
         <button id="change-value">
           <img src={ArrowBuy} alt="teste" />
         </button>
         <div className="itens-buy-container">
-          <h2>For</h2>
+          <h2>{t("buy.for")}</h2>
           <p id="value-usdt-amount">{value ? (value * 1).toFixed(2) : "0"}</p>
         </div>
         {
           !localStorage.getItem('wallet') ?
           ( 
-          <button onClick={openAndCloseModal} id="btn-wallet">Connect Wallet</button>
+          <button onClick={openAndCloseModal} id="btn-wallet">{t("buy.connect")}</button>
           )
           :
-          <button onClick={order} id="btn-wallet">Payment</button>
+          <button onClick={order} id="btn-wallet">{t("buy.pay")}</button>
 
         }
                
