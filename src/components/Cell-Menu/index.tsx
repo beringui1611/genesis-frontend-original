@@ -46,11 +46,11 @@ function CellMenu() {
         <Container>
             <div id="background-menu">
                 <div id="container-menu">
-                    <Link to="/buy">Buy It Now!</Link>
-                    <a href="/#div-2">About Gênesis</a>
-                    <a href="/#div-3">Community</a>
-                    <Link to="/farm">Farm</Link>
-                    <Link to="/whitepaper">Whitepaper</Link>
+                    <Link to="/buy">{t("header.buyNow")}</Link>
+                    <a href="/#div-2">{t("header.about")}</a>
+                    <a href="/#div-3">{t("header.community")}</a>
+                    <Link to="/farm">{t("header.farm")}</Link>
+                    <Link to="/whitepaper">{t("header.whitepaper")}</Link>
                     <div id="end-box">
                      <div id="box-info">
                         <div id="profile-box"></div>

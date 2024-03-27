@@ -51,9 +51,9 @@ function Home() {
         <BlocksTwo src={BackgroundImg} />
         <div className="title"><h1 id="title-text">{t("home.unlock")}</h1></div>
         <div className="two-containers">
-          <div><img id="predios" src={Predio} alt="predios" /></div>
+          <div id="container-esquerdo-home"><img id="predios" src={Predio} alt="predios" /></div>
           <hr className="vertical-line" />
-          <div><img id="man-image" src={Man} alt="man" /></div>
+          <div id="container-direito-home"><img id="man-image" src={Man} alt="man" /></div>
         </div>
         <div id="carousel"><Carousel /></div>
         <div className="three-containers">

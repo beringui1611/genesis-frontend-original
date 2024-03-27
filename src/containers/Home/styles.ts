@@ -42,7 +42,6 @@ overflow-y: hidden;
 
     .title{
         @media only screen and (min-width: 800px) and (max-width: 1280px){
-            
             display:flex;
             justify-content:center;
             align-items:center;
@@ -633,20 +632,32 @@ export const ContainerTwo = styled.div`
     }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1280px){  
-    
-    #title-text{
-      margin-left
-    }
+@media only screen and (min-width: 800px) and (max-width: 1281px){  
 #man-image{
     width:35vw;
+    
     
     
 }
 #predios{
     width:35vw;
+    
 }
 
+.two-containers{
+   padding:90px;
+   margin-bottom:1px;
+  
+  
+}
+.txt-column{
+    display:flex;
+    
+}
+
+.three-containers{
+     gap:10px
+}
 }
 .two-containers{
     
