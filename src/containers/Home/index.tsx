@@ -16,6 +16,7 @@ import Predio from '../../assets/Home-assets/predios.png';
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import { useTranslation } from "react-i18next";
+import HeaderSecundary from "../../components/header-secundary";
 
 function Home() {
   const [menu, setMenu] = useState(false)
@@ -29,6 +30,8 @@ function Home() {
     <Container>
       <Header />
       <Blocks src={BackgroundImg} />
+
+      <HeaderSecundary/>
 
       <button onClick={handleButton} id="button-menu"><img src={menu ? CloseLines : ThreeLines} alt="open-menu" /></button>
       {menu && <CellMenu />}

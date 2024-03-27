@@ -20,6 +20,7 @@ const rainbow = keyframes`
 
 export const Container = styled.div`
 
+
 background-color:rgba(41, 41, 41, 1);
 height:400vh;
 overflow-x: hidden;
@@ -40,10 +41,20 @@ overflow-y: hidden;
     }
 
     .title{
+        @media only screen and (min-width: 800px) and (max-width: 1280px){
+            
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+        }
         margin-left: 35px;
         #title-text{
+            
             font-size: 30px;
             width: 1200px;
+            
+
         }
     }
 }
@@ -184,7 +195,7 @@ border-radius: 43px ;
     width:616px;
     height:442px;
     border-radius:40px;
-
+    
 }
 
 .big-container-two{
@@ -559,7 +570,7 @@ border-radius: 43px ;
    }
 }
 
-@media only screen and (min-width:1012px) and (max-width:1900px){
+@media only screen and (min-width:1012px) and (max-width:1800px){
     .big-container-one{
         margin-left: 2%;
         margin-top: 10%;
@@ -582,7 +593,7 @@ export const ContainerTwo = styled.div`
     margin-top: 150px;
 
 
-    @media only screen and (min-width:1012px) and (max-width:1900px){
+    @media only screen and (min-width:1012px) and (max-width:1800px){
         margin-top:60%;
         margin-left:2%;
         #title-text{
@@ -622,7 +633,23 @@ export const ContainerTwo = styled.div`
     }
 }
 
+@media only screen and (min-width: 800px) and (max-width: 1280px){  
+    
+    #title-text{
+      margin-left
+    }
+#man-image{
+    width:35vw;
+    
+    
+}
+#predios{
+    width:35vw;
+}
+
+}
 .two-containers{
+    
     display: flex;
     gap: 90px;
     margin-left: -12px;
@@ -651,7 +678,7 @@ export const ContainerTwo = styled.div`
         font-size: 28px;
     }
 
-    @media only screen and (min-width:1012px) and (max-width:1900px){
+    @media only screen and (min-width:1012px) and (max-width:1800px){
     .txt-column{
         font-size:120%;
     }
@@ -976,7 +1003,7 @@ margin-left: -10px;
 @media only screen and (min-width:381px) and (max-width:402px){
     display: none;
 }
-@media only screen and (min-width:1012px) and (max-width:1900px){
+@media only screen and (min-width:1012px) and (max-width:1800px){
     display: none;
 }
 `
@@ -1007,12 +1034,12 @@ margin-left: -255px;
     display: none;
 }
 
-@media only screen and (min-width:1012px) and (max-width:1900px){
+@media only screen and (min-width:1012px) and (max-width:1800px){
     display: none;
 }
 `
 
-
+ 
 
 export const ContainerThree = styled.div`
 
@@ -1411,7 +1438,7 @@ export const ContainerThree = styled.div`
    }
 }
 
-@media only screen and (min-width:1000px) and (max-width:1900px){
+@media only screen and (min-width:1000px) and (max-width:1800px){
    margin-left:-20%;
    
   .four-containers{
