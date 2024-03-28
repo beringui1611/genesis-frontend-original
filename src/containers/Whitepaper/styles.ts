@@ -269,7 +269,7 @@ overflow-x:hidden;
 }
 
 @media only screen and (min-width:403px) and (max-width:430px){
-    height: 260vh;
+    height: 250vh;
     .containers-pdf{
         overflow-y:hidden;
     display: flex;
@@ -600,8 +600,10 @@ overflow-x:hidden;
 }
 }
 
-@media only screen and (min-width:800px) and (max-width:1281px){
-    height: 180vh;
+
+
+@media only screen and (min-width:1225px) and (max-width:1325px){
+    height: 150vh;
 
     .whitepaper-title{
     display: flex;

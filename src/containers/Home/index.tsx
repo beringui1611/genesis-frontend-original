@@ -2,14 +2,11 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import CellMenu from "../../components/Cell-Menu";
 import Carousel from "../../components/Carousel";
-import { Container, Blocks, BlocksTwo, ContainerTwo, ContainerThree } from "./styles";
+import { Container, Blocks, BlocksTwo, ContainerTwo } from "./styles";
 import BackgroundImg from "../../assets/Home-assets/blocks.svg"
 import ThreeLines from "../../assets/Media-assets/three-lines.svg"
 import CloseLines from "../../assets/Media-assets/close-lines.svg"
 import ArrowRight from "../../assets/Home-assets/Arrow 1.svg";
-import Cell from "../../assets/Home-assets/cellphone.svg"
-import Notification from "../../assets/Home-assets/notification.svg"
-import QrCode from "../../assets/Home-assets/QR Code.svg"
 import Girl from '../../assets/Home-assets/future.png';
 import Man from '../../assets/Home-assets/man.jpg';
 import Predio from '../../assets/Home-assets/predios.png';
@@ -17,6 +14,7 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 import { useTranslation } from "react-i18next";
 import HeaderSecundary from "../../components/header-secundary";
+import PageThree from "../../components/pageThree";
 
 function Home() {
   const [menu, setMenu] = useState(false)
@@ -61,21 +59,7 @@ function Home() {
           <h2 className="txt-column">{t("home.waitOne")}</h2>
         </div>
       </ContainerTwo>
-      <ContainerThree id="div-3">
-        <div className="four-containers">
-
-        </div>
-        <div className="buttons-containers">
-          <button><h1>Twitter</h1></button>
-          <button><h1>Discord</h1></button>
-        </div>
-        <div className="container-phone">
-          <img src={Cell} id="cellphone" alt="cellphone" />
-          <img className="notification" src={Notification} alt="notification" />
-          <img className="qr-code" src={QrCode} alt="qr-code" />
-          <button id="btn-join">{t("home.joinNow")}</button>
-        </div>
-      </ContainerThree>
+      <PageThree/>
       <Footer />
     </Container>
   );
