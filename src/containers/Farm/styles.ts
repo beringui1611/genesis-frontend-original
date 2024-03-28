@@ -5,6 +5,15 @@ export const Container = styled.div`
   height: 160vh;
   overflow-x:hidden;
 
+  @media screen and (min-width:800px) and (max-width:1281px){
+    height:200vh;
+   #container-grid{
+   position: relative;
+   left:-300px;
+   }
+  }
+  
+
   @media only screen and (min-width:100px) and (max-width:500px) {
     #button-menu{
       background-color:transparent;
@@ -1047,7 +1056,7 @@ export const Container = styled.div`
 }
 
 @media only screen and (min-width:403px) and (max-width:430px) {
-  height: 250vh;
+  height: 300vh;
  
   
   #h1-genesis{
@@ -1472,22 +1481,13 @@ export const Container = styled.div`
 
 }
 
-@media only screen and (min-width:1442px) and (max-width:1900px) {
-  overflow-y: hidden;
-  #container-grid{
-    margin-left: 10%;
-  }
-  #button-menu{
-    display: none;
-  }
-}
+
 
 @media only screen and (min-width:431px){
   #button-menu{
     display: none;
   }
 }
-
 
 
 `

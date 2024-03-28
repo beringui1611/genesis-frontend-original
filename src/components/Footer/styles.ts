@@ -2,9 +2,10 @@ import styled from "styled-components"
 
 
 export const Container = styled.div`
-
+ 
 .words-footer{
 display: flex;
+justify-content:left;
 gap: 40px;
 margin-left: 280px;
 margin-top: 70px;
@@ -19,13 +20,19 @@ margin-top: 70px;
 
 .social-media{
     display: flex;
+    justify-content:center;
     gap: 30px;
     margin-left: 1500px;
     margin-top: -35px;
 }
-
+@media only screen and (min-width: 800px) and (max-width: 1281px){
+    .contact{
+        margin-left:80px;
+    }
+}
 .contact{
     display: flex;
+    justify-content:left;
     margin-left: 280px;
 
     h3{

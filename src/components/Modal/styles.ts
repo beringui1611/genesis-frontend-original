@@ -8,6 +8,9 @@ width: 995px;
 height:591px;
 z-index: 99;
 
+
+  
+
 @media screen and (max-width:320px) and (max-width:500px){
     display: none;
 }

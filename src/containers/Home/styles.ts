@@ -26,6 +26,10 @@ height:400vh;
 overflow-x: hidden;
 overflow-y: hidden;
 
+@media only screen and (min-width: 800px) and (max-width: 1280px){
+    height:450vh;
+}
+
 #text-big-two{
     font-size: 24px;
     margin-top: 10px;
@@ -592,11 +596,11 @@ export const ContainerTwo = styled.div`
     margin-top: 150px;
 
 
-    @media only screen and (min-width:1012px) and (max-width:1800px){
+    @media only screen and (min-width:1012px) and (max-width:1281px){
         margin-top:60%;
         margin-left:2%;
         #title-text{
-            font-size:120%;
+            font-size:20px;
             width:60%;
             margin-left:4%;
         
@@ -632,33 +636,40 @@ export const ContainerTwo = styled.div`
     }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1281px){  
+@media only screen and (min-width: 800px) and (max-width: 1281px){ 
+     
 #man-image{
     width:35vw;
-    
+    margin-right:5px
     
     
 }
 #predios{
     width:35vw;
-    
+    margin-left:5px
 }
 
 .two-containers{
-   padding:90px;
-   margin-bottom:1px;
-  
-  
-}
-.txt-column{
-    display:flex;
-    
+    width:480px;
+    padding-left:75px;
+   
 }
 
 .three-containers{
-     gap:10px
+    width:1180px;
+    padding-left:60px;
 }
+
+
+#title-text{
+    margin-left:190px;
 }
+
+
+}
+
+
+
 .two-containers{
     
     display: flex;
@@ -689,11 +700,7 @@ export const ContainerTwo = styled.div`
         font-size: 28px;
     }
 
-    @media only screen and (min-width:1012px) and (max-width:1800px){
-    .txt-column{
-        font-size:120%;
-    }
-    }
+    
 }
 
 @media only screen and (max-width: 320px){
@@ -1449,12 +1456,6 @@ export const ContainerThree = styled.div`
    }
 }
 
-@media only screen and (min-width:1000px) and (max-width:1800px){
-   margin-left:-20%;
-   
-  .four-containers{
-    width:50%;   
-  }
 
   .buttons-containers{
     width:50%;
@@ -1498,7 +1499,7 @@ export const ContainerThree = styled.div`
     width:120px;
     height:20px;
   }
-}
+
 
 @media only screen and (min-width: 1439px) and (max-width: 1460px){
     margin-left:-10%;
@@ -1551,5 +1552,17 @@ export const ContainerThree = styled.div`
   }
 }
 
+  @media only screen and (min-width: 800px) and (max-width: 1281px){
+   .four-containers{
+   margin-left:20px;
+   }
+
+   .buttons-containers{
+    margin-left:138px;
+   }
+   
+   
+   
+}
 
 `
