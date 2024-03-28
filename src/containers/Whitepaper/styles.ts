@@ -269,7 +269,7 @@ overflow-x:hidden;
 }
 
 @media only screen and (min-width:403px) and (max-width:430px){
-    height: 230vh;
+    height: 250vh;
     .containers-pdf{
         overflow-y:hidden;
     display: flex;
