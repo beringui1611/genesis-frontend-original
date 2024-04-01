@@ -483,7 +483,7 @@ export const ContainerThree = styled.div`
 
         .qr-code{
             width:200px;
-            margin-left:155px;
+            margin-left:112px;
             margin-top:100px;
         }
 
@@ -497,7 +497,7 @@ export const ContainerThree = styled.div`
         #btn-join{
             margin-left:40px;
             position: absolute;
-            top:2810px;
+            top:2935px;
             margin-left:995px;
         }
 
@@ -505,6 +505,19 @@ export const ContainerThree = styled.div`
     }
 }
 
+@media only screen and (min-width: 1282px) and (max-width: 1620px){ 
+   
+       .qr-code{
+           width:200px;
+           margin-left:164px;
+           margin-top:100px;
+       }
+
+       #btn-join{
+
+       }
+   
+}
 
 @media only screen and (min-width: 1431px) and (max-width: 1620px){ 
     #box-midias{
@@ -529,8 +542,8 @@ export const ContainerThree = styled.div`
 
         .qr-code{
             width:200px;
-            margin-left:110px;
-            margin-top:00px;
+            margin-left:152px;
+            margin-top:130px;
         }
 
         .notification{

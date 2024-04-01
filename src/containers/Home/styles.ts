@@ -28,6 +28,10 @@ overflow-y: hidden;
     height:450vh;
 }
 
+@media only screen and (min-width: 1431px) and (max-width: 1800px){
+    height:500vh;
+}
+
 #text-big-two{
     font-size: 24px;
     margin-top: 10px;
@@ -35,7 +39,7 @@ overflow-y: hidden;
 }
 
 
-@media only screen and (min-width: 1439px) and (max-width: 1441px){
+@media only screen and (min-width: 1439px) and (max-width: 1600px){
     #text-big-two{
     font-size: 24px;
     margin-top: 70px;
@@ -1052,19 +1056,9 @@ export const ContainerTwo = styled.div`
 }
 }
 
-@media only screen and (min-width:1282px) and (max-width:1620){
-   .container-one{
-
-   }
-   #div-one{
-        display:flex;
-       align-items:center;
-       justify-content :center;
-        
-   }
-
+@media only screen and (min-width:1282px) and (max-width:1620px){
    #title-text{
-         margin-left:-643px;
+         margin-left:-160px;
          margin-top:700px;
      }
 
@@ -1072,11 +1066,12 @@ export const ContainerTwo = styled.div`
         margin-left: -115px;
      }
 
-
-     .qr-code{
-        width: 194px;
-        margin-left:200px;
+     .three-containers{
+        margin-top:100px;
      }
+
+
+   
    
 }
 
