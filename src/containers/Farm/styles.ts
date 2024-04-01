@@ -23,8 +23,8 @@ export const Container = styled.div`
   }
 
 
-  @media screen and (min-width:1585px) and (max-width:1881px){
-    height:200vh;
+  @media screen and (min-width:1585px) and (max-width:1900px){
+    height:210vh;
    #container-grid{
    position: relative;
    left:-120px;
