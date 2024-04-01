@@ -441,10 +441,11 @@ export const ContainerThree = styled.div`
         }
 
         .notification{
-            margin-top:420px;
-            margin-bottom:-100px;
-            width:180px;
-            margin-left:-140px;
+            position: static;
+            width: 233px;
+    margin-bottom: -156px;
+    margin-left: -300px;
+    margin-top: 147px;
         }
 
         #btn-join{
@@ -488,10 +489,11 @@ export const ContainerThree = styled.div`
         }
 
         .notification{
-            margin-top:420px;
-            margin-bottom:-100px;
-            width:180px;
-            margin-left:-140px;
+            
+            width: 233px;
+    margin-bottom: -156px;
+    margin-left: -300px;
+    margin-top: 147px;
         }
 
         #btn-join{
@@ -505,19 +507,7 @@ export const ContainerThree = styled.div`
     }
 }
 
-@media only screen and (min-width: 1282px) and (max-width: 1620px){ 
-   
-       .qr-code{
-           width:200px;
-           margin-left:164px;
-           margin-top:100px;
-       }
 
-       #btn-join{
-
-       }
-   
-}
 
 @media only screen and (min-width: 1431px) and (max-width: 1620px){ 
     #box-midias{
@@ -535,29 +525,31 @@ export const ContainerThree = styled.div`
 
     .container-phone{
         margin-left:600px;
+       
         #cellphone{
             width:700px;
             margin-top:40px;
         }
 
         .qr-code{
+          
             width:200px;
             margin-left:152px;
-            margin-top:130px;
+            margin-top:50px;
         }
 
         .notification{
-            margin-top:420px;
-            margin-bottom:-100px;
-            width:180px;
-            margin-left:-140px;
+       display: block;
+        width: 190px;
+        margin-bottom: -390px;
+        margin-left: -140px;
+        margin-top: 420px;
         }
 
         #btn-join{
-            margin-left:40px;
-            position: absolute;
-           top:2850px;
-           margin-left:995px;
+        width: 180px;
+        margin-left: 30px;
+
         }
 
 
@@ -566,4 +558,3 @@ export const ContainerThree = styled.div`
 
 
 `
-    

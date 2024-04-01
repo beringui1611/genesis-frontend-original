@@ -1058,16 +1058,22 @@ export const ContainerTwo = styled.div`
 
 @media only screen and (min-width:1282px) and (max-width:1620px){
    #title-text{
-         margin-left:-160px;
+         margin-left:-200px;
          margin-top:700px;
+         
      }
 
      .txt-column{
-        margin-left: -115px;
+        margin-left: -160px;
+        gap: 242px;
      }
 
      .three-containers{
+        display: flex;
+        gap: 340px;
+        margin-left: auto;
         margin-top:100px;
+
      }
 
 
