@@ -700,7 +700,6 @@ overflow-x:hidden;
 
 @media only screen and (min-width:1430px) and (max-width:1830px){
     height: 200vh;
-
     .whitepaper-title{
     display: flex;
     justify-content: center;

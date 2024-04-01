@@ -886,8 +886,8 @@ h2{
 }
 
 
-@media only screen and (min-width:1282px) and (max-width:1430px){
-    height: 180vh;
+@media only screen and (min-width:1282px) and (max-width:1630px){
+    height: 200vh;
 
 .buy-title{
    margin-left: 40px;
