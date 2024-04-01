@@ -1075,7 +1075,7 @@ export const ContainerTwo = styled.div`
 
      .qr-code{
         width: 194px;
-        margin-left:;
+        margin-left:200px;
      }
    
 }

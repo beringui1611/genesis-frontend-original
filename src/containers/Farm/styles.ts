@@ -6,7 +6,7 @@ export const Container = styled.div`
   overflow-x:hidden;
 
   @media screen and (min-width:800px) and (max-width:1345px){
-    height:200vh;
+    height:220vh;
    #container-grid{
    position: relative;
    left:-300px;
@@ -15,7 +15,7 @@ export const Container = styled.div`
 
 
   @media screen and (min-width:1346px) and (max-width:1584px){
-    height:200vh;
+    height:220vh;
    #container-grid{
    position: relative;
    left:-200px;
@@ -23,8 +23,8 @@ export const Container = styled.div`
   }
 
 
-  @media screen and (min-width:1585px) and (max-width:1900px){
-    height:210vh;
+  @media screen and (min-width:1585px) and (max-width:1800px){
+    height:220vh;
    #container-grid{
    position: relative;
    left:-120px;
