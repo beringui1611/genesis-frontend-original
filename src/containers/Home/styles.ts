@@ -645,13 +645,13 @@ export const ContainerTwo = styled.div`
 
 .two-containers{
     width:480px;
-    padding-left:75px;
+    padding-left:255px;
    
 }
 
 .three-containers{
-    width:1180px;
-    padding-left:60px;
+    width:1380px;
+    padding-left:200px;
 }
 
 
@@ -696,6 +696,68 @@ export const ContainerTwo = styled.div`
 
     
 }
+
+@media only screen and (min-width:1282px) and (max-width: 1430px){ 
+     
+     #man-image{
+         width:35vw;
+         margin-right:5px
+         
+         
+     }
+     #predios{
+         width:35vw;
+         margin-left:5px
+     }
+     
+     .two-containers{
+         width:480px;
+         padding-left:75px;
+        
+     }
+          
+     
+     #title-text{
+         margin-left:-500px;
+         margin-top:700px;
+     }
+     
+     
+     }
+     
+     
+     
+     .two-containers{
+         display: flex;
+         gap: 90px;
+         margin-left: -200px;
+         margin-top: 100px;
+             
+         div{
+             background-color:rgba(66, 65, 65, 0.5);
+             width: 624px;
+             height: 450px;
+             border:4px solid rgba(203, 203, 203, 0.8);
+             border-radius: 43px ;
+         }
+     }
+     
+     .three-containers{
+         display: flex;
+         gap: 190px;
+         margin-left: -150px;
+         margin-top: 30px;
+     
+         h2{
+             color:rgba(255, 255, 255, 1);
+             width: 600px;
+             text-align: center;
+             font-weight: 400;
+             font-size: 25px;
+         }
+     
+         
+     }
 
 @media only screen and (max-width: 320px){
     margin-top: 1000px;

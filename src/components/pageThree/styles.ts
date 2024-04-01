@@ -412,4 +412,51 @@ export const ContainerThree = styled.div`
 
 
 
+@media only screen and (min-width: 800px) and (max-width: 1281px){ 
+    #box-midias{
+        margin-left:50px;
+    }
+
+    .buttons-containers{
+        margin-left:50px;
+        button{
+            h1{
+                margin-left:-120px;
+            }
+        }
+    }
+
+    .container-phone{
+        margin-left:600px;
+        #cellphone{
+            width:700px;
+            margin-top:40px;
+        }
+
+        .qr-code{
+            width:200px;
+            margin-left:110px;
+            margin-top:00px;
+        }
+
+        .notification{
+            margin-top:420px;
+            margin-bottom:-100px;
+            width:180px;
+            margin-left:-140px;
+        }
+
+        #btn-join{
+            margin-left:40px;
+            position: absolute;
+           top:2680px;
+           margin-left:995px;
+        }
+
+
+    }
+}
+
+
 `
+    

@@ -160,6 +160,16 @@ function getContract(provider?: ethers.BrowserProvider): ethers.Contract {
 }
 
 
+async function getContractSeller(provider?: any): Promise<ethers.Contract>{
+    const network = localStorage.getItem('network');
+    const TypeWallet = localStorage.getItem('type');
+    if (!provider) provider = TypeWallet === "metamask" ? getProviderMetaMask() : getProviderTrust();
+    const signer = await provider.getSigner(localStorage.getItem("account") || undefined);
+    const contract = new ethers.Contract(network === "bsc" ? GENESIS_BSC : GENESIS_MATIC, ABI as ethers.InterfaceAbi, provider);
+    return contract.connect(signer) as ethers.Contract;
+}
+
+
 
 export async function addYieldFarming(amount: any): Promise<any> {
     const contract = await getContractSigner();
