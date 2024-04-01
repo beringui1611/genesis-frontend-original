@@ -98,7 +98,7 @@ export const ContainerThree = styled.div`
         padding-top: 25px;
         padding-bottom: 25px;
         margin-top: -40px;
-        margin-left: -5px;
+        margin-left: -120px;
         position: absolute;
         background:linear-gradient(90deg, rgba(255, 51, 149, 1) 0%, rgba(82, 0, 255, 1) 48.06%, rgba(255, 51, 149, 1) 97.52%);
         color: transparent;
@@ -413,6 +413,7 @@ export const ContainerThree = styled.div`
 
 
 @media only screen and (min-width: 800px) and (max-width: 1281px){ 
+   
     #box-midias{
         margin-left:50px;
     }
@@ -450,6 +451,99 @@ export const ContainerThree = styled.div`
             margin-left:40px;
             position: absolute;
            top:2680px;
+           margin-left:995px;
+        }
+
+
+    }
+}
+
+
+@media only screen and (min-width: 1282px) and (max-width: 1430px){ 
+   
+    #box-midias{
+        margin-left:50px;
+    }
+
+    .buttons-containers{
+        margin-left:50px;
+        button{
+            h1{
+                margin-left:-120px;
+            }
+        }
+    }
+
+    .container-phone{
+        margin-left:600px;
+        #cellphone{
+            width:700px;
+            margin-top:40px;
+        }
+
+        .qr-code{
+            width:200px;
+            margin-left:155px;
+            margin-top:100px;
+        }
+
+        .notification{
+            margin-top:420px;
+            margin-bottom:-100px;
+            width:180px;
+            margin-left:-140px;
+        }
+
+        #btn-join{
+            margin-left:40px;
+            position: absolute;
+            top:2810px;
+            margin-left:995px;
+        }
+
+
+    }
+}
+
+
+@media only screen and (min-width: 1431px) and (max-width: 1620px){ 
+    #box-midias{
+        margin-left:10px;
+    }
+
+    .buttons-containers{
+        margin-left:10px;
+        button{
+            h1{
+                margin-left:-120px;
+            }
+        }
+    }
+
+    .container-phone{
+        margin-left:600px;
+        #cellphone{
+            width:700px;
+            margin-top:40px;
+        }
+
+        .qr-code{
+            width:200px;
+            margin-left:110px;
+            margin-top:00px;
+        }
+
+        .notification{
+            margin-top:420px;
+            margin-bottom:-100px;
+            width:180px;
+            margin-left:-140px;
+        }
+
+        #btn-join{
+            margin-left:40px;
+            position: absolute;
+           top:2850px;
            margin-left:995px;
         }
 

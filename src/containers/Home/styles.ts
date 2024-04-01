@@ -20,7 +20,11 @@ height:400vh;
 overflow-x: hidden;
 overflow-y: hidden;
 
-@media only screen and (min-width: 800px) and (max-width: 1280px){
+@media only screen and (min-width: 800px) and (max-width: 1281px){
+    height:450vh;
+}
+
+@media only screen and (min-width: 1282px) and (max-width: 1430px){
     height:450vh;
 }
 
@@ -39,7 +43,7 @@ overflow-y: hidden;
     }
 
     .title{
-        @media only screen and (min-width: 800px) and (max-width: 1280px){
+        @media only screen and (min-width: 800px) and (max-width: 1281px){
             display:flex;
             justify-content:center;
             align-items:center;
@@ -580,7 +584,7 @@ border-radius: 43px ;
     }
 
     #text-big-two{
-        font-size:110%;
+        font-size:140%;
     }
 }
 `
@@ -631,7 +635,6 @@ export const ContainerTwo = styled.div`
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1281px){ 
-     
 #man-image{
     width:35vw;
     margin-right:5px
@@ -718,7 +721,7 @@ export const ContainerTwo = styled.div`
           
      
      #title-text{
-         margin-left:-500px;
+         margin-left:-643px;
          margin-top:700px;
      }
      
@@ -1048,6 +1051,35 @@ export const ContainerTwo = styled.div`
     }
 }
 }
+
+@media only screen and (min-width:1282px) and (max-width:1620){
+   .container-one{
+
+   }
+   #div-one{
+        display:flex;
+       align-items:center;
+       justify-content :center;
+        
+   }
+
+   #title-text{
+         margin-left:-643px;
+         margin-top:700px;
+     }
+
+     .txt-column{
+        margin-left: -115px;
+     }
+
+
+     .qr-code{
+        
+     }
+   
+}
+
+
 `
 
 
@@ -1080,6 +1112,9 @@ margin-left: -10px;
 @media only screen and (min-width:1012px) and (max-width:1800px){
     display: none;
 }
+
+
+
 `
 
 export const BlocksTwo = styled.img`
@@ -1111,6 +1146,7 @@ margin-left: -255px;
 @media only screen and (min-width:1012px) and (max-width:1800px){
     display: none;
 }
+
 `
 
  

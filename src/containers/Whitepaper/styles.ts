@@ -6,6 +6,7 @@ height: 130vh;
 overflow-x:hidden;
 
 
+
 #button-whitepaper{
     @media only screen and (max-width: 320px){
         background: transparent;
@@ -19,6 +20,8 @@ overflow-x:hidden;
             height: 17px;
         }
     }
+
+    
 
     @media only screen and (min-width:321px) and (max-width:340px){
         background: transparent;
@@ -603,7 +606,100 @@ overflow-x:hidden;
 
 
 @media only screen and (min-width:1225px) and (max-width:1325px){
-    height: 150vh;
+    height: 180vh;
+
+    .whitepaper-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    h1{
+        font-size: 30px;
+        color: #ffffff;
+    }
+    }
+    .containers-pdf{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-bottom: 300px;
+    gap: 30px;
+    
+    div{
+        display: flex;
+        background-color:rgba(66, 65, 65, 0.5);
+        border:3px solid rgba(203, 203, 203, 8);
+        border-radius: 43px ;
+        width: 23rem;
+        height: 13rem;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+        opacity:0.5;
+        cursor: pointer;
+    }
+        a{
+            display: flex;
+            gap: 10px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1);
+            font-weight: 500;
+            font-size: 17px;
+        }
+    }
+
+}
+}
+
+@media only screen and (min-width:1326px) and (max-width:1430px){
+    height: 200vh;
+
+    .whitepaper-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    h1{
+        font-size: 30px;
+        color: #ffffff;
+    }
+    }
+    .containers-pdf{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-bottom: 300px;
+    gap: 30px;
+    
+    div{
+        display: flex;
+        background-color:rgba(66, 65, 65, 0.5);
+        border:3px solid rgba(203, 203, 203, 8);
+        border-radius: 43px ;
+        width: 23rem;
+        height: 13rem;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+        opacity:0.5;
+        cursor: pointer;
+    }
+        a{
+            display: flex;
+            gap: 10px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1);
+            font-weight: 500;
+            font-size: 17px;
+        }
+    }
+
+}
+}
+
+
+@media only screen and (min-width:1430px) and (max-width:1830px){
+    height: 200vh;
 
     .whitepaper-title{
     display: flex;
